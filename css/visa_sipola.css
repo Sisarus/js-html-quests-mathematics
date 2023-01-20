@@ -1,0 +1,95 @@
+/* Henri Sipola */
+
+/* colors */
+.ok {
+    background-color: #07ce03 !important;
+}
+
+.blue {
+    background-color: #46afff;
+}
+
+.wrongAnswer {
+    background-color: #d90502 !important;
+}
+
+.rightAnswer {
+    background-color: #07ce03 !important;
+}
+
+.warning {
+    background-color: #f96600 !important;
+}
+
+.danger {
+    background-color: #d90502 !important;
+}
+
+.bg-gray {
+    background-color: #a1aaa8 !important;
+}
+
+.gray {
+    color: #a1aaa8 !important;
+}
+
+.color-black {
+    color:black;
+}
+
+/* control-block */
+
+.custom-control-input {
+    padding-top: 1em;
+}
+
+.custom-control {
+    border-radius: 5px;
+}
+
+.custom-control:hover{
+    background-color:#46afff;
+}
+
+/* general */
+
+label {
+    font-weight: bold;
+    width:100%;
+}
+
+.progress {
+    height: 5px;
+}
+
+input:disabled+label {
+    color:black !important;
+}
+
+#tidbit-box {
+    background-color: #46afff;
+    font-weight: bold;       
+    border-radius: 5px;   
+}
+
+
+/* result screen and animation */
+#tulos-awards {
+    font-size: 1.5em;
+}
+
+#palkkio {
+    animation-name: award-animation;
+    animation-duration: 2s;
+}
+
+.intro p{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+@keyframes award-animation {
+    0% {font-size: 0em;}
+    75% {font-size: 4em;}
+    100% {font-size: 1em;}
+}

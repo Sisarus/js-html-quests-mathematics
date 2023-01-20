@@ -1,0 +1,47 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24-Apr-2020, 16:01:40
+    Author     : jonna
+
+colors:
+#FDEEE2
+#F6AC74
+#F07516
+#954609
+#321C0B
+*/
+
+.lokero {
+    background-color: #46afff;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 10px;
+}
+main h1, main h2, main h3, main h4, main h5, main h6, main p {
+    font-family: 'Comic Neue', bold;
+    
+}
+main p {
+    font-size: x-large;
+}
+main h2 {
+    font-size: xx-large; 
+}
+.btn {
+    font-family: 'Comic Neue', bold;
+}
+.fa-puzzle-piece {
+    color: #701a59;
+}
+.fa-check {
+    color: greenyellow;
+}
+.fa-times {
+    color: #dc3545;
+}
+
+

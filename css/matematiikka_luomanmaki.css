@@ -1,0 +1,250 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16.4.2020, 10:24:16
+    Author     : Alisa Luomanmäki
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@515&display=swap');
+
+.padding_puoli{
+    padding: 0.5rem;
+}
+
+.not_visible{
+    display: none;
+}
+
+/* Valikko */
+
+.kirjeita{
+    background-color: #99CCCC;
+    width: 100%;
+    border-radius: 20px;
+    min-height: 300px;
+}
+
+.border_line_ruusu{
+    border:  5px #f7cac9 solid;
+}
+
+.kaunis_tausta{
+    background-color: #eef6f6;
+    padding: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 2px;
+}
+
+#aloita{
+    background-color: #a6c289;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 1px 1px #091111;
+}
+
+#aloita:hover{
+    background-color: #1a3333;
+    color: #cde5e5;
+    font-weight: bold;
+}
+
+/* Harjoitus */
+
+.kupla{
+    background-color: #ffffff;
+    border: 3px #2b5454  solid;
+    border-radius: 2rem;
+    min-height: 420px;
+}
+
+#tarkista{
+    background-color: #763d4b;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#tarkista:hover{
+    background-color: #5900b3;
+    color: #cde5e5;
+    font-weight: bold;
+}
+
+#seuraava{
+    background-color: #683d76;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#seuraava:hover{
+    background-color: #ff6666;
+    color: #cde5e5;
+    font-weight: bold;
+}
+
+/* Kuvat */
+
+#apukuvat{
+    width: 100%;
+}
+
+#apukuvat li {
+    display: inline-block;
+    width: 100%;
+}
+
+.img{
+    width: 50%;
+}
+
+.img_loppu{
+    width: 35%;
+}
+
+.margit_pois{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.muotoa_peliin{
+    background-color: #58847e;
+    color: #eef6ee;
+    border-radius: 25%;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.lisaaNainMonta{
+    background-color: #a6ff4d;
+    color:  #003326;
+    padding: 5px;
+    border-radius: 30px 2px 20px 0px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+}
+
+.vastaaKaikkiin{
+    border: 5px #ff4747 solid;
+    background-color: #ff6666;
+    color: #262626;
+}
+
+/* Määrittelyitä kaavioihin */
+
+.form-control:disabled, .form-control[readonly] {
+    background-color: #57a857;
+    opacity: 1;
+}
+
+/* Chrome, Safari, Edge, Opera  https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox  https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp*/
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* https://www.w3schools.com/howto/howto_css_placeholder.asp */
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ffffff !important;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #ffffff !important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #ffffff !important;
+}
+
+/* Lehtien värien määrittelyitä */
+.oikeaVastaus{
+    background-color: #57a857 !important;
+}
+
+.vaaraVastaus{
+    background-color: #a86b57 !important;
+}
+
+.oikeaLehti{
+    background-color: #00995c;
+    color: #800000;
+}
+
+.vaaraLehti{
+    background-color: #a85757;
+    color: #1a0d00;
+}
+
+.fa-heart{
+    color: #800000;
+}
+
+/* Lopputuloksen määrittelyitä */
+.fa-star {
+    color: #ffcc00;
+}
+
+.fa-5x{
+    color: #cc66ff ;
+}
+
+.kaunis_taustaLoppu {
+    background: linear-gradient(to bottom, #eef6f6 0%, #3d3d76 80%) !important;
+}
+
+.kaunis_taustaLoppuhyva  {
+    background-color: #3d3d76;
+}
+
+.loppu{
+    color: #ff80ff;
+}
+
+.loppuVaalea{
+    color: #660066;
+}
+
+#alkutakaisin{
+    background-color: #3d3d76;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#alkutakaisin:hover{
+    background-color: #b489c2;
+    color: #cde5e5;
+    font-weight: bold;
+}
+
+@media (max-width: 740px){
+
+    .lisaaNainMonta{
+        border-radius: 30px 2px 20px 0px;
+        font-size: 2rem;
+        font-weight: bold;
+        position: absolute;
+        top: -25px;
+        right: 20px;
+    }
+    
+    .img{
+        width: 40%;
+    }
+}

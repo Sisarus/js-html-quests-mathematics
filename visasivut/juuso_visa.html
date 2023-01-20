@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+<html lang="fi">
+
+<head>
+    <title>Antiikin Rooma</title>
+    <meta name="description" content="Alaluokkien opetussivusto: Visa">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Juuso">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-replace-svg="nest"></script>
+    <link href="../css/styles.css" rel="stylesheet">
+    <link href="../css/visa_juuso.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Otsikko-banneri ja navigointi -->
+        <header>
+            <div class=" row jumbotron">
+                <div class="col-12 col-sm-8 ylapalkki">
+                    <h1 class="padding">ABC-123 Testaa oppimaasi</h1>
+                    <h3 class="padding">Tietovisoja ja matematiikan tehtäviä</h3>
+                </div>
+                <!-- Animaatio -->
+                <div class="col-12 col-sm-4 align-content-sm-center">
+                    <span class="fa-stack fa-4x" id="aurinko">
+                        <i class="far fa-sun fa-stack-2x fa-spin" aria-hidden="true"></i>
+                        <i class="fas fa-smile fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    </span>
+                </div>
+            </div>
+            <!-- Navigaatio -->
+            <nav class="navbar navbar-expand-sm row bg_ylapalkki">
+                <button class="navbar-toggler" type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarSupportedContent" 
+                        aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav h4">
+                        <li class="nav-item bg_ylapalkki">
+                            <a class="nav-link padding" href="../index.html" id="etusivu">
+                                <i class="fas fa-bolt text_color_purple"></i>
+                                Etusivu
+                                    <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item bg_ylapalkki">
+                            <a class="nav-link padding"
+                               href="../takasivu.html" id="tietojameista">
+                                <i class="fab fa-earlybirds"></i>
+                                Tekijät
+                            </a>
+                        </li>
+                        <!-- Visavalikko -->
+                        <li class="nav-item dropdown bg_ylapalkki active">
+                            <a class="nav-link padding" href="#"
+                               id="visaDropdown" role="button"
+                               data-toggle="dropdown" aria-haspopup="true"
+                               aria-expanded="false">
+                                <i class="fas fa-crown"></i>
+                                Visa
+                            </a>
+                            <div class="dropdown-menu leveytta"
+                                 aria-labelledby="visaDropdown">
+                                <a class="dropdown-item text-center"
+                                   href="alisa_visa.html">Kalevala-visa</a>
+                                <a class="dropdown-item text-center"
+                                   href="henri_visa.html">Maantiedon visa</a>
+                                <a class="dropdown-item text-center" 
+                                   href="jonna_visa.html">Suomen historian visa</a>
+                                <!-- <a class="dropdown-item text-center" 
+                                   href="josie_visa.html">Josien visa</a> -->
+                                <a class="dropdown-item text-center active" 
+                                   href="juuso_visa.html">Antiikin Rooma visa</a>
+                                <a class="dropdown-item text-center" 
+                                   href="mika_visa.html">Ympäristötiedon visa</a>
+                            </div>
+                        </li>
+                        <!-- Matikkavalikko -->
+                        <li class="nav-item dropdown bg_ylapalkki">
+                            <a class="nav-link padding" href="#" id="matikkaDropdown"
+                               role="button" data-toggle="dropdown"
+                               aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-brain"></i>
+                                Matematiikka
+                            </a>
+                            <div class="dropdown-menu leveytta" 
+                                 aria-labelledby="matikkaDropdown">
+                                <a class="dropdown-item text-center"
+                                   href="../matikkasivut/alisa_matikka.html">Kertotaulun harjoittelu</a>
+                                <a class="dropdown-item text-center"
+                                   href="../matikkasivut/henri_matikka.html">Jakolaskut</a>
+                                <a class="dropdown-item text-center"
+                                   href="../matikkasivut/jonna_matikka.html">Prosenttilaskut</a>
+                                <!-- <a class="dropdown-item text-center"
+                                   href="../matikkasivut/josie_matikka.html">Josien
+                                    matikka</a> -->
+                                <a class="dropdown-item text-center"
+                                   href="../matikkasivut/juuso_matikka.html">Vähennyslaskut</a>
+                                <a class="dropdown-item text-center"
+                                   href="../matikkasivut/mika_matikka.html">Yhteenlaskut</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        </header>
+
+        <!-- Visa -->
+        <main class="row bg_tausta_1 ">
+        <!-- Aloitus-boxi -->
+            <div class="col-12 welcome text-center">
+                <h1 class="display-4">Antiikin Rooma visa</h1>
+            </div>
+
+            <div id="intro_div" class="col-12 text-center">
+                <p>Tervetuloa leikkimielisen Rooma-visan pariin, jossa koetellaan tietämystäsi 
+                    Rooman valtakunnasta.</p>
+                <button id="intro_btn" class="btn" data-toggle="collapse" data-target="#Q_page">Aloitetaan</button>
+            </div>
+
+        <!-- Kysymykset/vaihtoehdot, joista valitaan -->
+            <div id="Q_page" class="col-12 collapse">
+                <h3 id="theQ" class="">1. Kuka legendan mukaan perusti Rooman?</h3>
+                <div id="Q_opt" class="text-left">
+                    <button id="a1" name="opt1" value="0" class="answer q1">a) Julius Caesar</button>
+                    <button id="a2" name="opt1" value="1" class="answer q1">b) Romulus</button>
+                    <button id="a3" name="opt1" value="0" class="answer q1">c) Nero</button>
+                    <button id="a4" name="opt1" value="0" class="answer q1">d) Hadrianus</button>
+                </div>
+                <p id="a_info" class="text-left invisible">Legendan mukaan Romulus perusti 
+                Rooman ja toimi ensimmäisenä kuninkaana vuosina 753–715 eaa.</p>
+            </div>
+
+            <div id="Q_page" class="col-12 collapse">
+                <h3 id="theQ" class="">2. Kuka oli Rooman ensimmäinen keisari? </h3>
+                <div id="Q_opt" class="text-left">
+                    <button id="a1" name="opt2" value="0" class="answer q2">a) Commodus</button>
+                    <button id="a2" name="opt2" value="0" class="answer q2">b) Marcus Aurelius</button>
+                    <button id="a3" name="opt2" value="0" class="answer q2">c) Julius Caesar</button>
+                    <button id="a4" name="opt2" value="1" class="answer q2">d) Augustus</button>
+                </div>
+                <p id="b_info" class="text-left invisible">Augustus hallitsi yksinvaltiaana yli 40-vuotta.</p>
+            </div>
+
+            <div id="Q_page" class="col-12 collapse">
+                <h3 id="theQ" class="">3. Mikä on nimeltään merkittävä paikka, 
+                    jossa roomalaiset pääsivät nauttimaan gladiaattorinäytännöistä? </h3>
+                <div id="Q_opt" class="text-left">
+                    <button id="a1" name="opt3" value="0" class="answer q3">a) Pantheon</button>
+                    <button id="a2" name="opt3" value="0" class="answer q3">b) Piazza Navona</button>
+                    <button id="a3" name="opt3" value="1" class="answer q3">c) Colosseum</button>
+                    <button id="a4" name="opt3" value="0" class="answer q3">d) Circus Maximus</button>
+                </div>
+                <p id="c_info" class="text-left invisible">Colosseum oli valtakunnan suurin amfiteatteri 
+                    ja sinne mahtui yli 50 000 katsojaa.</p>
+            </div>
+
+            <div id="Q_page" class="col-12 collapse">
+                <h3 id="theQ" class="">4. Minkä nimiseen vaatekappaleeseen valtaosa väestöstä pukeutui?</h3>
+                <div id="Q_opt" class="text-left">
+                    <button id="a1" name="opt4" value="1" class="answer q4">a) Tunika</button>
+                    <button id="a2" name="opt4" value="0" class="answer q4">b) Stola</button>
+                    <button id="a3" name="opt4" value="0" class="answer q4">c) Tooga</button>
+                    <button id="a4" name="opt4" value="0" class="answer q4">d) Kaapu</button>
+                </div>
+                <p id="d_info" class="text-left invisible">Roomassa tunikan pituus ja mahdollinen koristelu 
+                    ilmaisi käyttäjän yhteiskunnallista asemaa.</p>
+            </div>
+
+            <div id="Q_page" class="col-12 collapse">
+                <h3 id="theQ" class="">5. Mitä on Posca?</h3>
+                <div id="Q_opt" class="text-left">
+                    <button id="a1" name="opt5" value="1" class="answer q5">a) Etikkaa ja vettä</button>
+                    <button id="a2" name="opt5" value="0" class="answer q5">b) Viiniä</button>
+                    <button id="a3" name="opt5" value="0" class="answer q5">c) Olutta</button>
+                    <button id="a4" name="opt5" value="0" class="answer q5">d) Viiniä ja hunajaa</button>
+                </div>
+                <p id="e_info" class="text-left invisible">Etenkin sotilaiden ja alemman luokan kanslaisten käytössä. 
+                    Sekaan saatettiin lisätä yrttejä.</p>
+            </div>
+
+            <div id="Q_page" class="col-12 collapse">
+                <h3 id="theQ" class="">6. Miksikä kutsutaan Augustuksen valtakaudella alkanutta pitkää rauhan ajanjaksoa?</h3>
+                <div id="Q_opt" class="text-left">
+                    <button id="a1" name="opt6" value="0" class="answer q6">a) Max Romana</button>
+                    <button id="a2" name="opt6" value="0" class="answer q6">b) Rax Romana</button>
+                    <button id="a3" name="opt6" value="1" class="answer q6">c) Pax Romana</button>
+                    <button id="a4" name="opt6" value="0" class="answer q6">d) Ara Pacis Augustae</button>
+                </div>
+                <p id="f_info" class="text-left invisible">Ajanjakson on katsottu kestäneen vuodesta 27 eaa. vuoteen 180.</p>
+            </div>
+
+            <div id="Q_page" class="col-12 collapse">
+                <h3 id="theQ" class="">7. Minkä niminen on tunnettu lyhyt miekka, jota Rooman legioonissa käytettiin?</h3>
+                <div id="Q_opt" class="text-left">
+                    <button id="a1" name="opt7" value="0" class="answer q7">a) Rapiiri</button>
+                    <button id="a2" name="opt7" value="0" class="answer q7">b) Spatha</button>
+                    <button id="a3" name="opt7" value="0" class="answer q7">c) Katana</button>
+                    <button id="a4" name="opt7" value="1" class="answer q7">d) Gladius</button>
+                </div>
+                <p id="g_info" class="text-left invisible">Miekka oli ensisijaisesti pistoase, mutta soveltui myös lyömäaseeksi.</p>
+            </div>
+
+            <div id="Q_page" class="col-12 collapse">
+                <h3 id="theQ" class="">8. Kenen valtakaudella Rooman valtakunta oli laajimmillaan?</h3>
+                <div id="Q_opt" class="text-left">
+                    <button id="a1" name="opt8" value="0" class="answer q8">a) Julius Caesar</button>
+                    <button id="a2" name="opt8" value="0" class="answer q8">b) Augustus</button>
+                    <button id="a3" name="opt8" value="1" class="answer q8">c) Trajanus</button>
+                    <button id="a4" name="opt8" value="0" class="answer q8">d) Pompeius</button>
+                </div>
+                <p id="h_info" class="text-left invisible">Trajanuksen valtakausi kesti vuodesta 98 vuoteen 117.</p>
+            </div>
+
+            <div id="Q_page" class="col-12 collapse">
+                <h3 id="theQ" class="">9. Milloin Rooma jakautui kahteen; Länsi-Rooma ja Itä-Rooma? </h3>
+                <div id="Q_opt" class="text-left">
+                    <button id="a1" name="opt9" value="1" class="answer q9">a) Vuonna 395</button>
+                    <button id="a2" name="opt9" value="0" class="answer q9">b) Vuonna 200</button>
+                    <button id="a3" name="opt9" value="0" class="answer q9">c) Vuonna 134</button>
+                    <button id="a4" name="opt9" value="0" class="answer q9">d) Vuonna 70 ekr.</button>
+                </div>
+                <p id="i_info" class="text-left invisible">Keisari Theodosiuksen kuoltua 
+                    Rooma jakautui lopullisesti itäiseen ja läntiseen keisarikuntaan.</p>
+            </div>
+
+            <div id="Q_page" class="col-12 collapse">
+                <h3 id="theQ" class="">10. Miksikä kutsutaan Rooman ja Karthagon välisiä kolmen sodan sarjaa? </h3>
+                <div id="Q_opt" class="text-left">
+                    <button id="a1" name="opt10" value="0" class="answer q10">a) Nuijasodat</button>
+                    <button id="a2" name="opt10" value="1" class="answer q10">b) Puunilaissodat</button>
+                    <button id="a3" name="opt10" value="0" class="answer q10">c) Goottisodat</button>
+                    <button id="a4" name="opt10" value="0" class="answer q10">d) Bellum Batonianum</button>
+                </div>
+                <p id="j_info" class="text-left invisible">Roomalaiset kutsuivat Karthagon asukkaita puunilaisiksi.</p>
+                <button id="result_btn" class="btn invisible" data-toggle="collapse" data-target="#results">Tulokset</button> 
+            </div>
+
+        <!-- Tulos-boxi, johon tulee pisteet ja animaatiot -->
+            <div id="results" class="col-12 collapse p-4">
+                <div id="rocket" class="d-inline">
+                    <i class="fa fa-space-shuttle fa-4x"></i>
+                    <i class="fa fa-flag-checkered fa-4x"></i>
+                </div>
+                <div id="star" class="text-center">
+                    <i class="fa fa-star fa-4x"></i>
+                </div>
+                <ul id="measure">
+                    <li id="mN" class="badge">0</li>
+                    <li id="mN" class="badge">1</li>
+                    <li id="mN" class="badge">2</li>
+                    <li id="mN" class="badge">3</li>
+                    <li id="mN" class="badge">4</li>
+                    <li id="mN" class="badge">5</li>
+                    <li id="mN" class="badge">6</li>
+                    <li id="mN" class="badge">7</li>
+                    <li id="mN" class="badge">8</li>
+                    <li id="mN" class="badge">9</li>
+                    <li id="mN" class="badge">10</li>
+                </ul>
+                <p id="gz_text" class="text-center"></p>
+                <h1 id="result_text" class="text-center"></h1>
+                <!--Uudestaan painike lataa sivun uudelleen-->
+                <div class="text-center">
+                    <button id="again_btn" class="btn text-center">Uudestaan</button>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="row bg_purple text_color_white jalan_tekstit text-center">
+            <div class="col-6 col-sm mt-1 p-2">
+                <p class="mb-0 mt-0">Alisa</p>
+                <p class="">Luomanmäki</p>
+            </div>
+            <div class="col-6 col-sm mt-1 p-2">
+                <p class="mb-0">Henri</p>
+                <p class="">Sipola</p>
+            </div>
+            <div class="col-6 col-sm mt-1 p-2">
+                <p class="mb-0">Jonna</p>
+                <p class="">Nykvist</p>
+            </div>
+            <div class="col-6 col-sm-2 mt-1 p-2">
+                <p class="mb-0">Josie</p>
+                <p class="">Kallio</p>
+            </div>
+            <div class="col-6 col-sm mt-1 p-2">
+                <p class="mb-0">Juuso</p>
+                <p class="">Seppälä</p>
+            </div>
+            <div class="col-6 col-sm mt-1 p-2">
+                <p class="mb-0">Mika</p>
+                <p class="">Väisänen</p>
+            </div>
+            <hr class="mt-1 foot_hr">
+            <div class="col-12 pt-2 pb-2">   
+                <p class="h3">Verkkoturistit </p>
+                <p class="h3">2020</p>
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="../js/animation.js"></script>
+        <script src="../js/visa_seppala.js"></script>
+    </div>
+</body>
+
+</html>

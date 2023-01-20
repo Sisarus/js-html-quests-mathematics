@@ -1,0 +1,93 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 23.3.2020, 10:43:20
+    Author     : mikav
+*/
+
+
+
+.valittu {
+    background-color: #b3b3ff;
+    width: 60%;
+}
+
+.väärin {
+    background-color: #b3b3ff;
+    width: 60%;
+
+}
+
+.oikein {
+    font-weight: bold;
+    width: 60%;
+
+}
+
+.not_visible {
+    display: none;
+
+}
+.not_visible2 {
+    display: none;
+}
+
+input {
+    padding-left: 10px;
+}
+
+.fa-check {
+    color: green;
+    display: none;
+}
+.fa-times {
+    color: red;
+    display: none;
+}
+
+
+#virhe {
+    display: none;
+    color: red;
+}
+
+div.col-md-9 {
+    background-color: #e6faff;
+    padding-left: 100px;   
+}
+.ylä {
+    border-radius: 20px 20px 0px 0px;
+}
+.ala {
+    border-radius: 0px 0px 20px 20px;
+}
+
+.affix {
+    top: 400px;
+    z-index: 9999 !important;
+    position: fixed;
+    font-size: 28px;   
+    max-width: 100%
+}
+.fa-gem, .fa-meh, .fa-thumbs-up {
+    display: none;
+    font-size: 1.5em;
+}
+label {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.detective {
+    width: 20%;
+}
+
+@media (max-width: 740px){
+    .affix {
+        font-size: 16px;
+
+    }
+
+}

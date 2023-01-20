@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html lang="fi">
+
+    <head>
+        <title>Kertolaskun harjoittelu</title>
+        <meta name="description" content="Alaluokkien opetussivusto: Etusivu">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Author" content="Verkkoturistit">
+        <meta name="Author" content="Alisa Luomanmäki">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+              integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-replace-svg="nest"></script>
+        <link href="../css/styles.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/matematiikka_luomanmaki.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <body>
+        <div class="container">
+            <!-- Otsikko-banneri ja navigointi -->
+            <header>
+                <div class=" row jumbotron">
+                    <div class="col-12 col-sm-8 ylapalkki">
+                        <h1 class="padding">ABC-123 Testaa oppimaasi</h1>
+                        <h3 class="padding">Tietovisoja ja matematiikan tehtäviä</h3>
+                    </div>
+                    <!-- Animaatio -->
+                    <div class="col-12 col-sm-4 align-content-sm-center">
+                        <span class="fa-stack fa-4x" id="aurinko">
+                            <i class="far fa-sun fa-stack-2x fa-spin" 
+                               aria-hidden="true"></i>
+                            <i class="fas fa-smile fa-stack-1x fa-inverse" 
+                               aria-hidden="true"></i>
+                        </span>
+                    </div>
+                </div>
+                <!-- Navigaatio -->
+                <nav class="navbar navbar-expand-sm row bg_ylapalkki">
+                    <button class="navbar-toggler" type="button"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent" 
+                            aria-controls="navbarSupportedContent" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav h4">
+                            <li class="nav-item bg_ylapalkki">
+                                <a class="nav-link padding" href="../index.html"
+                                   id="etusivu">
+                                    <i class="fas fa-bolt"></i>
+                                    Etusivu
+                                    <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item bg_ylapalkki">
+                                <a class="nav-link padding"
+                                   href="../takasivu.html" id="tietojameista">
+                                    <i class="fab fa-earlybirds"></i>
+                                    Tekijät
+                                </a>
+                            </li>
+                            <!-- Visavalikko -->
+                            <li class="nav-item dropdown bg_ylapalkki">
+                                <a class="nav-link padding" href="#"
+                                   id="visaDropdown" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true"
+                                   aria-expanded="false">
+                                    <i class="fas fa-crown"></i>
+                                    Visa
+                                </a>
+                                <div class="dropdown-menu leveytta"
+                                     aria-labelledby="visaDropdown">
+                                    <a class="dropdown-item text-center"
+                                       href="../visasivut/alisa_visa.html">
+                                        Kalevala-visa</a>
+                                    <a class="dropdown-item text-center"
+                                       href="../visasivut/henri_visa.html">
+                                        Maantiedon visa</a>
+                                    <a class="dropdown-item text-center" 
+                                       href="../visasivut/jonna_visa.html">
+                                        Suomen historian visa</a>
+                                    <a class="dropdown-item text-center" 
+                                       href="../visasivut/juuso_visa.html">
+                                        Antiikin Rooma visa</a>
+                                    <a class="dropdown-item text-center" 
+                                       href="../visasivut/mika_visa.html">
+                                        Ympäristötiedon visa</a>
+                                </div>
+                            </li>
+                            <!-- Matikkavalikko -->
+                            <li class="nav-item dropdown bg_ylapalkki active">
+                                <a class="nav-link padding" href="#" id="matikkaDropdown"
+                                   role="button" data-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-brain"></i>
+                                    Matematiikka
+                                </a>
+                                <div class="dropdown-menu leveytta" 
+                                     aria-labelledby="matikkaDropdown">
+                                    <a class="dropdown-item text-center active"
+                                       href="../matikkasivut/alisa_matikka.html">
+                                        Kertotaulun harjoittelu</a>
+                                    <a class="dropdown-item text-center"
+                                       href="../matikkasivut/henri_matikka.html">
+                                        Jakolaskut</a>
+                                    <a class="dropdown-item text-center"
+                                       href="../matikkasivut/jonna_matikka.html">
+                                        Prosenttilaskut</a>
+                                    <a class="dropdown-item text-center"
+                                       href="../matikkasivut/juuso_matikka.html">
+                                        Vähennyslaskut</a>
+                                    <a class="dropdown-item text-center"
+                                       href="../matikkasivut/mika_matikka.html">
+                                        Yhteenlaskut</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </header>
+            <!-- Main -->
+
+            <main class="row bg_tausta_1">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 padding_bottom padding">
+                        Harjoittele kertolaskuja</h1>
+                </div>
+
+                <!-- Aloitus alue / harjoitus alue -->
+                <div class="kirjeita border_line_ruusu row margit_pois">
+                    <div class="col-12 text-center kaunis_tausta ">
+                        <h3>Tervetuloa harjoittelemaan kertolaskuja</h3>
+                    </div>
+
+                    <!-- Ohjeita alue -->
+                    <div class="offset-0 offset-md-1 col-12 col-md-5 col-lg-4 kaunis_tausta"
+                         id="ohjeet">
+                        <h4 class="padding text-center">
+                            Harjoittelussa on 2-10 kertotaulut. Täytä 
+                            ruudut oikealla luvulla. Tarkista-painike
+                            kertoo oliko vastaus oikein tai väärin.
+                        </h4>
+
+                        <h3 class="padding text-center">Onnistut varmasti!</h3>
+
+                    </div>
+
+                    <!-- Valitse millainen harjoitus -->
+                    <div class="offset-0 offset-md-1 col-12 col-md-5 col-lg-4 kaunis_tausta"
+                         id="valitse">
+                        <h3 class="text_color_orange">Valitse kysymysten määrä</h3>
+                        <img src="../img/luomanmaki_img/matematiikka_tytto/tyttonen.gif"
+                             class="img-fluid img float-right padding_bottom" alt=""/>
+                        <form>
+                            <div class="form-check">
+                                <input type="radio" name="kysMaara" id="minmaara" 
+                                       value="5" class="form-check-input" checked>
+                                <label for="minmaara" class="form-check-label">
+                                    5 kysymystä
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="radio" name="kysMaara" id="keskimaara" 
+                                       value="10" class="form-check-input">
+                                <label for="keskimaara" class="form-check-label">
+                                    10 kysymystä
+                                </label>
+                            </div>
+
+                            <div class="form-check padding_bottom">
+                                <input type="radio" name="kysMaara" id="maxmaara" 
+                                       value="15" class="form-check-input">
+                                <label for="maxmaara" class="form-check-label">
+                                    15 kysymystä
+                                </label>
+                            </div>
+                            <div class="form-check padding_bottom">
+                                <input type="checkbox" class="form-check-input" id="apuri">
+                                <label class="form-check-label" for="apuri">
+                                    Ota apuri käyttöön
+                                </label>
+                            </div>
+
+                            <button type="button" class="btn btn-lg btn-block"
+                                    id="aloita">Aloita
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Valitse millainen harjoitus -->
+                    <div class="col-12 kaunis_tausta not_visible" id="harjoitusalue">
+                        <h4 class="text_color_orange">
+                            Täytä laatikot oikeilla vastauksilla
+                        </h4>
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <img src="../img/luomanmaki_img/matematiikka_tytto/seiso.png" 
+                                     class="img-fluid  d-flex align-items-center" alt=""/>
+                            </div>
+                            <div class="col-12 col-md-6 text-center kupla d-flex align-items-center padding">
+                                <div id="lukuNro" class="col-12"></div>
+                                <ul id="apukuvat" class="col-12 not_visible"></ul>
+                            </div>
+                        </div>
+
+                        <span id="tarkistaTulos" class="display-4 padding col-6">
+                            Pisteesi: 0</span>
+
+                        <form class="row padding_top col-12" id="harjoitus">
+                            <div class="form-group col-5 offset-1 col-md-2 col-lg-1">
+                                <label for="nro1"></label>
+                                <input type="number" class="form-control muotoa_peliin"
+                                       id="nro1" placeholder="1" disabled>
+                            </div>
+                            <div class="form-group col-5 offset-1 offset-md-0 col-md-2 col-lg-1">
+                                <label for="nro2"></label>
+                                <input type="number" class="form-control muotoa_peliin"
+                                       id="nro2" placeholder="2">
+                                <div class="lisaaNainMonta">+ 10</div>
+                            </div>
+                            <div class="form-group col-5 offset-1 offset-md-0 col-md-2 col-lg-1">
+                                <label for="nro3"></label>
+                                <input type="number" class="form-control muotoa_peliin"
+                                       id="nro3" placeholder="3">
+                                <div class="lisaaNainMonta">+ 10</div>
+                            </div>
+                            <div class="form-group col-5 offset-1 offset-md-0 col-md-2 col-lg-1">
+                                <label for="nro4"></label>
+                                <input type="number" class="form-control muotoa_peliin"
+                                       id="nro4" placeholder="4">
+                                <div class="lisaaNainMonta">+ 10</div>
+                            </div>
+                            <div class="form-group col-5 offset-1 offset-md-0 col-md-2 col-lg-1">
+                                <label for="nro5"></label>
+                                <input type="number" class="form-control muotoa_peliin"
+                                       id="nro5" placeholder="5">
+                                <div class="lisaaNainMonta">+ 10</div>
+                            </div>
+                            <div class="form-group col-5 offset-1 offset-md-1 offset-lg-0  col-md-2 col-lg-1">
+                                <label for="nro6"></label>
+                                <input type="number" class="form-control muotoa_peliin"
+                                       id="nro6" placeholder="6">
+                                <div class="lisaaNainMonta">+ 10</div>
+                            </div>
+                            <div class="form-group col-5 offset-1 offset-md-0 col-md-2 col-lg-1">
+                                <label for="nro7"></label>
+                                <input type="number" class="form-control muotoa_peliin"
+                                       id="nro7" placeholder="7">
+                                <div class="lisaaNainMonta">+ 10</div>
+                            </div>
+                            <div class="form-group col-5 offset-1 offset-md-0 col-md-2 col-lg-1">
+                                <label for="nro8"></label>
+                                <input type="number" class="form-control muotoa_peliin"
+                                       id="nro8" placeholder="8">
+                                <div class="lisaaNainMonta">+ 10</div>
+                            </div>
+                            <div class="form-group col-5 offset-1 offset-md-0 col-md-2 col-lg-1">
+                                <label for="nro9"></label>
+                                <input type="number" class="form-control muotoa_peliin" 
+                                       id="nro9" placeholder="9">
+                                <div class="lisaaNainMonta">+ 10</div>
+                            </div>
+                            <div class="form-group col-5 offset-1 offset-md-0 col-md-2 col-lg-1">
+                                <label for="nro10"></label>
+                                <input type="number" class="form-control muotoa_peliin"
+                                       id="nro10" placeholder="10" disabled>
+                            </div>
+                        </form>
+
+                        <!-- Alapainike/etenemisalue -->
+                        <div class="row padding_bottom">
+                            <div class="col-6">
+                                <button type="button" class="btn btn-lg float-right" id="tarkista">
+                                    Tarkista</button>
+                            </div>
+                            <div class="col-6">
+                                <button type="button" class="btn btn-lg not_visible float-right"
+                                        id="seuraava">
+                                    Seuraava</button>
+                            </div>
+                        </div>
+                        <div class="progress col-12 ">
+                            <div class="progress-bar progress-bar-success"
+                                 role="progressbar" style="width: 0%" aria-valuenow="0"
+                                 aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                    <!-- Pelin päättyessä tämä tulee esiin -->
+                    <div id="lopetus" class="kaunis_tausta col-12 not_visible">
+                        <div id="loppukuva" class="padding d-flex justify-content-center">
+                            <h3 id="wauTahtia">
+                            </h3>
+                        </div>
+                        <div class="col-12 d-flex justify-content-center">
+                            <div id="kuva" class="d-flex justify-content-center">
+                            </div>
+                            <h3 id="loppuTeksti"></h3>
+                        </div>
+                        <div id="lopputekstit" class="display-4 text-center padding_bottom">
+                        </div>
+                        <button class="btn btn-lg btn-block" id="alkutakaisin">
+                            PALAA ALKUUN
+                        </button>
+                    </div>
+                </div>
+
+            </main>
+            <!-- Footer -->
+            <footer class="row bg_purple text_color_white jalan_tekstit text-center">
+                <div class="col-6 col-sm mt-1 p-2">
+                    <p class="mb-0 mt-0">Alisa</p>
+                    <p class="">Luomanmäki</p>
+                </div>
+                <div class="col-6 col-sm mt-1 p-2">
+                    <p class="mb-0">Henri</p>
+                    <p class="">Sipola</p>
+                </div>
+                <div class="col-6 col-sm mt-1 p-2">
+                    <p class="mb-0">Jonna</p>
+                    <p class="">Nykvist</p>
+                </div>
+                <div class="col-6 col-sm mt-1 p-2">
+                    <p class="mb-0">Josie</p>
+                    <p class="">Kallio</p>
+                </div>
+                <div class="col-6 col-sm mt-1 p-2">
+                    <p class="mb-0">Juuso</p>
+                    <p class="">Seppälä</p>
+                </div>
+                <div class="col-6 col-sm mt-1 p-2">
+                    <p class="mb-0">Mika</p>
+                    <p class="">Väisänen</p>
+                </div>
+                <hr class="mt-1 foot_hr">
+                <div class="col-12 pt-2 pb-2">   
+                    <p class="h3">Verkkoturistit </p>
+                    <p class="h3">2020</p>
+                </div>
+            </footer>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+        <script src="../js/animation.js"></script>
+        <script src="../js/matematiikka_luomanmaki.js" type="text/javascript"></script>
+
+    </body>
+
+</html>

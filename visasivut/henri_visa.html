@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html lang="fi">
+
+<head>
+    <title>Maantietovisa</title>
+    <meta name="description" content="Alaluokkien opetussivusto: Visa">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Henri">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-replace-svg="nest"></script>
+    <link href="../css/styles.css" rel="stylesheet">
+    <link href="../css/visa_sipola.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Otsikko-banneri ja navigointi -->
+        <header>
+            <div class=" row jumbotron">
+                <div class="col-12 col-sm-8 ylapalkki">
+                    <h1 class="padding">ABC-123 Testaa oppimaasi</h1>
+                    <h3 class="padding">Tietovisoja ja matematiikan tehtäviä</h3>
+                </div>
+                <!-- Animaatio -->
+                <div class="col-12 col-sm-4 align-content-sm-center">
+                    <span class="fa-stack fa-4x" id="aurinko">
+                        <i class="far fa-sun fa-stack-2x fa-spin" aria-hidden="true"></i>
+                        <i class="fas fa-smile fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    </span>
+                </div>
+            </div>
+            <!-- Navigaatio -->
+            <nav class="navbar navbar-expand-sm row bg_ylapalkki">
+                <button class="navbar-toggler" type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarSupportedContent" 
+                        aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav h4">
+                        <li class="nav-item bg_ylapalkki">
+                            <a class="nav-link padding" href="../index.html" id="etusivu">
+                                <i class="fas fa-bolt text_color_purple"></i>
+                                Etusivu
+                                    <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item bg_ylapalkki">
+                            <a class="nav-link padding"
+                               href="../takasivu.html" id="tietojameista">
+                                <i class="fab fa-earlybirds"></i>
+                                Tekijät
+                            </a>
+                        </li>
+                        <!-- Visavalikko -->
+                        <li class="nav-item dropdown bg_ylapalkki active">
+                            <a class="nav-link padding" href="#"
+                               id="visaDropdown" role="button"
+                               data-toggle="dropdown" aria-haspopup="true"
+                               aria-expanded="false">
+                                <i class="fas fa-crown"></i>
+                                Visa
+                            </a>
+                            <div class="dropdown-menu leveytta"
+                                 aria-labelledby="visaDropdown">
+                                <a class="dropdown-item text-center"
+                                   href="alisa_visa.html">Kalevala-visa</a>
+                                <a class="dropdown-item text-center active"
+                                   href="henri_visa.html">Maantiedon visa</a>
+                                <a class="dropdown-item text-center" 
+                                   href="jonna_visa.html">Suomen historian visa</a>
+                                <!-- <a class="dropdown-item text-center" 
+                                   href="josie_visa.html">Josien visa</a> -->
+                                <a class="dropdown-item text-center" 
+                                   href="juuso_visa.html">Antiikin Rooma visa</a>
+                                <a class="dropdown-item text-center" 
+                                   href="mika_visa.html">Ympäristötiedon visa</a>
+                            </div>
+                        </li>
+                        <!-- Matikkavalikko -->
+                        <li class="nav-item dropdown bg_ylapalkki">
+                            <a class="nav-link padding" href="#" id="matikkaDropdown"
+                               role="button" data-toggle="dropdown"
+                               aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-brain"></i>
+                                Matematiikka
+                            </a>
+                            <div class="dropdown-menu leveytta" 
+                                 aria-labelledby="matikkaDropdown">
+                                <a class="dropdown-item text-center"
+                                   href="../matikkasivut/alisa_matikka.html">Kertotaulun harjoittelu</a>
+                                <a class="dropdown-item text-center"
+                                   href="../matikkasivut/henri_matikka.html">Jakolaskut</a>
+                                <a class="dropdown-item text-center"
+                                   href="../matikkasivut/jonna_matikka.html">Prosenttilaskut</a>
+                                <!-- <a class="dropdown-item text-center"
+                                   href="../matikkasivut/josie_matikka.html">Josien
+                                    matikka</a> -->
+                                <a class="dropdown-item text-center"
+                                   href="../matikkasivut/juuso_matikka.html">Vähennyslaskut</a>
+                                <a class="dropdown-item text-center"
+                                   href="../matikkasivut/mika_matikka.html">Yhteenlaskut</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        </header>
+
+        <main class="row bg_tausta_1 text-center">
+
+            <div class="col-12 welcome text-center">
+                <h1>Maantietovisa</h1>
+            </div>
+
+            <!-- Introruutu -->
+            <div class="col-12 intro collapse show">
+                <div class="col-12">
+                    <h3>Tässä visassa sinulta kysytään kysymyksiä maantiedosta.</h3>
+                    <p>Valitse listasta oikea vaihtoehto ennen aikarajan umpeutumista!</p>
+                    <button type="button" class="btn btn-primary m-2" id="aloita">Aloita!</button>
+                </div>
+            </div>
+
+            <!-- Tulosruutu -->
+            <div class="col-12 tulos collapse">
+                <p class="col text-center"><span id="tulos-awards"></span></p>
+                <h2><span id="tulos-info"></span></h2>
+                <button type="button" class="btn btn-primary m-2" id="uudestaan">Uudestaan!</button>
+            </div>
+
+            <!-- Kysymysruutu -->
+            <div class="col-12 questions collapse">
+                <div class="input-group col-12">
+                    <!-- kysymys -->
+                    <h3 class="col-12"><span id="question"></span></h3>
+                    <!-- progress-bar -->
+                    <div class="col-12">
+                        <div class="mb-2 progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <!-- vaihtoehdot -->
+                    <div class="col-12 options-area text-left">
+
+                    </div>
+                    <!-- lisätiedot -->
+                    <div class="col-12 ml-2 collapse" id="tidbit-box">
+                        <p class="align-middle pt-2"><span id="tidbit"></span></p>
+                    </div>
+                    <!-- jatkonapit -->
+                    <div class="col-12 mt-2 mb-2 collapse" id="seuraava">
+                        <button type="button" class="btn btn-primary">Seuraava</button>
+                    </div>
+                    <div class="col-12 mt-2 mb-2 collapse" id="show-tulos">
+                        <button type="button" class="btn btn-primary">Tulos</button>
+                    </div>
+                </div>
+                <!-- palkinta -->
+                <p class="col-12 text-center"><span id="awards"></span></p>
+
+            </div>
+        </main>
+        <footer class="row bg_purple text_color_white jalan_tekstit text-center">
+            <div class="col-6 col-sm-2 mt-1 p-2">
+                <p class="mb-0 mt-0">Alisa</p>
+                <p class="">Luomanmäki</p>
+            </div>
+            <div class="col-6 col-sm mt-1 p-2">
+                <p class="mb-0">Henri</p>
+                <p class="">Sipola</p>
+            </div>
+            <div class="col-6 col-sm mt-1 p-2">
+                <p class="mb-0">Jonna</p>
+                <p class="">Nykvist</p>
+            </div>
+            <div class="col-6 col-sm mt-1 p-2">
+                <p class="mb-0">Josie</p>
+                <p class="">Kallio</p>
+            </div>
+            <div class="col-6 col-sm mt-1 p-2">
+                <p class="mb-0">Juuso</p>
+                <p class="">Seppälä</p>
+            </div>
+            <div class="col-6 col-sm mt-1 p-2">
+                <p class="mb-0">Mika</p>
+                <p class="">Väisänen</p>
+            </div>
+            <hr class="mt-1 foot_hr">
+            <div class="col-12 pt-2 pb-2">   
+                <p class="h3">Verkkoturistit </p>
+                <p class="h3">2020</p>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="../js/animation.js"></script>
+        <script src="../js/visa_sipola.js"></script>
+    </div>
+</body>
+
+</html>

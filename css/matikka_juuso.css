@@ -1,0 +1,149 @@
+/*divien perusasettelu*/
+#intro_div,
+#toCal_div,
+#cal_div,
+#score_div,
+#gz_div {
+    background-color: mediumseagreen;
+    color: white;
+    border-radius: 15px;
+    font-weight: bold;
+    margin-bottom: 1em;
+    padding: 10px;
+    padding-top: 1em;
+}
+
+/*Laskemaan/Uudestaan painikkeet*/
+#toCal_btn,
+#again_btn {
+    background-color: yellowgreen;
+    color: white;
+    border-radius: 15px;
+    font-weight: bold;
+    margin: 1em;
+    padding: 10px;
+    outline: none;
+}
+
+#toCal_btn:hover {
+    background-color: rgb(170, 252, 6);
+    color: white;
+}
+
+/*valintadivin omat asetukset*/
+#choice_div {
+    background-color: mediumseagreen;
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+/*valintapainikkeet*/
+input[type=radio] {
+    display: none;
+}
+
+input[type=radio] + label {
+    height: 3em;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}
+
+input[type=radio]:checked + label  {
+    background-color: rgb(170, 252, 6);
+}
+
+input[type=radio] + label {
+    background-color: yellowgreen;
+    margin-bottom: 1em;
+    border-radius: 15px;
+    font-weight: bold;
+    border: solid;
+    border-color: white;
+}
+
+input[type=radio] + label:hover {
+    background-color: rgb(170, 252, 6);
+    color: white;
+}
+
+/*Tarkista/Seuraava painikkeet*/
+#check_btn,
+#next_btn {
+    background-color: yellowgreen;
+    color: white;
+    border-radius: 15px;
+    font-weight: bold;
+    margin-bottom: 1em;
+    padding: 10px;
+    width: 100%;
+    outline: none !important;
+}
+
+#check_btn,
+#next_btn {
+    width: fit-content;
+}
+
+.check_btn:hover {
+    background-color: rgb(170, 252, 6);
+    color: white;
+}
+
+/*laskudivin elementtien asettelua*/
+#theCal div {
+    display: inline-block;
+}
+
+#boxes h3{
+    display: inline-block;
+}
+
+#score_div {
+    height: 8em;
+}
+
+#answer {
+    width: 4em;
+    height: auto;
+}
+
+/*tulosdivin animaatiot*/
+#rocket {
+    margin-left: 5em;
+    position: relative;
+}
+
+#flag {
+    float: right;
+    margin-right: 0.5em;
+}
+
+.spinner-grow {
+    color: rgba(228, 143, 206, 0.863);
+}
+
+.spinner-end {
+    color: lightblue;
+}
+
+.spinner-start {
+    color: lightblue;
+}
+
+#measure {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#measure li{
+    list-style-type: none;
+    display: block;
+    flex: 0 1 auto;
+}

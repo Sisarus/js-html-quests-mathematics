@@ -1,0 +1,51 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27-Apr-2020, 12:05:41
+    Author     : jonna
+*/
+
+/*takasivun kuvien määritteet*/
+
+.takaimg {
+    border: solid black 5px;
+    border-radius: 50%;
+    align-content: center;
+}
+.prof {
+    border: #768280 dashed 2px;
+    padding: 10px;
+}
+
+.prof p{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.fa-linkedin,
+.fa-github{
+    font-size: 4rem;
+}
+
+.fa-linkedin{
+    color: #2867B2;
+}
+
+.fa-github{
+    color: #333333;
+}
+
+.fa-linkedin:hover,
+.fa-github:hover{
+    color: #e6e6e6;
+}
+
+ul {
+    list-style-type:none;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+}

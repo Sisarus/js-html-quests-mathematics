@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+
+<html lang="fi">
+
+    <head>
+        <title>Ympäristotiedon visa</title>
+        <meta name="description" content="Alaluokkien opetussivusto: Visa">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Author" content="Mika">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+              integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+              integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-replace-svg="nest"></script>
+        <link href="../css/styles.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/visa_mika.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <body>
+        <div class="container">
+            <!-- Otsikko-banneri ja navigointi -->
+            <header>
+                <div class=" row jumbotron">
+                    <div class="col-12 col-sm-8 ylapalkki">
+                        <h1 class="padding">ABC-123 Testaa oppimaasi</h1>
+                        <h3 class="padding">Tietovisoja ja matematiikan tehtäviä</h3>
+                    </div>
+                    <!-- Animaatio -->
+                    <div class="col-12 col-sm-4 align-content-sm-center">
+                        <span class="fa-stack fa-4x" id="aurinko">
+                            <i class="far fa-sun fa-stack-2x fa-spin" aria-hidden="true"></i>
+                            <i class="fas fa-smile fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                </div>
+                <!-- Navigaatio -->
+                <nav class="navbar navbar-expand-sm row bg_ylapalkki">
+                    <button class="navbar-toggler" type="button"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent" 
+                            aria-controls="navbarSupportedContent" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav h4">
+                            <li class="nav-item bg_ylapalkki">
+                                <a class="nav-link padding" href="../index.html" id="etusivu">
+                                    <i class="fas fa-bolt"></i>
+                                    Etusivu
+                                    <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item bg_ylapalkki">
+                                <a class="nav-link padding"
+                                   href="../takasivu.html" id="tietojameista">
+                                    <i class="fab fa-earlybirds"></i>
+                                    Tekijät
+                                </a>
+                            </li>
+                            <!-- Visavalikko -->
+                            <li class="nav-item dropdown bg_ylapalkki active">
+                                <a class="nav-link padding" href="#"
+                                   id="visaDropdown" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true"
+                                   aria-expanded="false">
+                                    <i class="fas fa-crown"></i>
+                                    Visa
+                                </a>
+                                <div class="dropdown-menu leveytta active"
+                                     aria-labelledby="visaDropdown">
+                                    <a class="dropdown-item text-center"
+                                       href="../visasivut/alisa_visa.html">
+                                        Kalevala-visa</a>
+                                    <a class="dropdown-item text-center"
+                                       href="../visasivut/henri_visa.html">
+                                        Maantiedon visa</a>
+                                    <a class="dropdown-item text-center" 
+                                       href="../visasivut/jonna_visa.html">
+                                        Suomen historian visa</a>
+                                    <a class="dropdown-item text-center" 
+                                       href="../visasivut/juuso_visa.html">
+                                        Antiikin Rooma visa</a>
+                                    <a class="dropdown-item text-center active" 
+                                       href="../visasivut/mika_visa.html">
+                                        Ympäristötiedon visa</a>
+                                </div>
+                            </li>
+                            <!-- Matikkavalikko -->
+                            <li class="nav-item dropdown bg_ylapalkki">
+                                <a class="nav-link padding" href="#" id="matikkaDropdown"
+                                   role="button" data-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-brain"></i>
+                                    Matematiikka
+                                </a>
+                                <div class="dropdown-menu leveytta" 
+                                     aria-labelledby="matikkaDropdown">
+                                    <a class="dropdown-item text-center"
+                                       href="../matikkasivut/alisa_matikka.html">
+                                        Kertotaulun harjoittelu</a>
+                                    <a class="dropdown-item text-center"
+                                       href="../matikkasivut/henri_matikka.html">
+                                        Jakolaskut</a>
+                                    <a class="dropdown-item text-center"
+                                       href="../matikkasivut/jonna_matikka.html">
+                                        Prosenttilaskut</a>
+                                    <a class="dropdown-item text-center"
+                                       href="../matikkasivut/juuso_matikka.html">
+                                        Vähennyslaskut</a>
+                                    <a class="dropdown-item text-center"
+                                       href="../matikkasivut/mika_matikka.html">
+                                        Yhteenlaskut</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </header>
+
+            <main class="bg_tausta_1">
+
+                <div class="text-center mb-5 mt-5 col-12">
+                    <h1>Ympäristötiedon visa</h1>
+                </div>
+                <div class="col-12 welcome text-center">
+                    <p class="font-weight-bold">Testaa tietämystäsi ympäristöopissa, kysymyksiä on kahdeksan kappaletta.</p>
+                    <img src="../img/väisänen/detective.png" class="img-fluid detective" alt=""/>
+                </div>
+                <div class="col-12">
+                    <div>
+                        <div class="affix">
+                            <p class="mt-5" id="tulos"></p>
+                        </div>
+                    </div> 
+                    <div class="col-12"> 
+
+                        <section class="row justify-content-md-center">
+                            <div class="col-md-9 ylä pt-4">
+                                <h3 class="mb-4">1. Aurinko nousee?</h3>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="sun" id="itä" value="1">
+                                    <label class="ml-4" for="itä">
+                                        idästä &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-check fa-lg" id="sun1" aria-hidden="true"></i>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="sun" id="länsi" value="0">
+                                    <label class="ml-4" for="länsi">
+                                        lännestä &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-times fa-lg" id="sun2" aria-hidden="true"></i>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="sun" id="north" value="0">
+                                    <label class="ml-4" for="north">
+                                        pohjoisesta &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-times fa-lg" id="sun3" aria-hidden="true"></i>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="sun" id="lunch" value="0">
+                                    <label class="ml-4" for="lunch">
+                                        päivälliseltä &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-times fa-lg" id="sun4" aria-hidden="true"></i>
+                                    </label>
+                                </div><br>
+
+                                <p class="not_visible font-weight-bold" id="sun">
+                                    Auringon nousua katsellessa katselet itään.</p>
+                            </div>
+                        </section>
+                        <section class="row justify-content-md-center">    
+                            <div class="col-md-9">
+                                <h3 class="mt-5 mb-4">2. Suomen kansalliseläin on?</h3>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="eläin" id="karhu" value="1">
+                                    <label class="ml-4" for="karhu">
+                                        karhu &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-check fa-lg" id="eläin1" aria-hidden="true"></i>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="eläin" id="susi" value="0">
+                                    <label class="ml-4" for="susi">
+                                        susi &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-times fa-lg" id="eläin2" aria-hidden="true"></i>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="eläin" id="punatulkku" value="0">
+                                    <label class="ml-4" for="punatulkku">
+                                        punatulkku &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-times fa-lg" id="eläin3" aria-hidden="true"></i>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="eläin" id="ilves" value="0">
+                                    <label class="ml-4" for="ilves">
+                                        ilves &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-times fa-lg" id="eläin4" aria-hidden="true"></i>
+                                    </label>
+                                </div><br>
+
+                                <p class="not_visible font-weight-bold" id="eläin">
+                                    Karhu on Suomen kansalliseläin</p>
+
+                            </div>
+                        </section>
+                        <section class="row justify-content-md-center">    
+                            <div class="col-md-9">
+                                <h3 class="mt-5 mb-4">3. Muurahaispesän loivin sivu osoittaa?</h3>
+
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="sivu" id="pohj" value="0">
+                                    <label class="ml-4" for="pohj">
+                                        pohjoiseen &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-times fa-lg" id="sivu1" aria-hidden="true"></i>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="sivu" id="itään" value="0">
+                                    <label class="ml-4" for="itään">
+                                        itään &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-times fa-lg" id="sivu2" aria-hidden="true"></i>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="sivu" id="south" value="1">
+                                    <label class="ml-4" for="south">
+                                        etelään &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-check fa-lg" id="sivu3" aria-hidden="true"></i>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="sivu" id="west" value="0">
+                                    <label class="ml-4" for="west">
+                                        länteen &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-times fa-lg" id="sivu4" aria-hidden="true"></i>
+                                    </label>
+                                </div><br>
+
+                                <p class="not_visible font-weight-bold" id="sivu">
+                                    Muurahaispesää voi käyttää vaikka kompassina, sen loivin sivu osoittaa etelään.       </p>
+
+                            </div>
+                        </section>
+                        <section class="row justify-content-md-center">    
+                            <div class="col-md-9">
+                                <h3 class="mt-5 mb-4">4. Revontulet syntyvät?</h3>
+
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="revontulet" id="raketti" value="0">
+                                    <label class="ml-4" for="raketti">
+                                        ilotulisraketista &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-times fa-lg" id="revontulet1" aria-hidden="true"></i>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="revontulet" id="kylmä" value="0">
+                                    <label class="ml-4" for="kylmä">
+                                        kun ilma muuttuu nopesasti kylmästä lämpimään &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-times fa-lg" id="revontulet2" aria-hidden="true"></i>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="revontulet" id="hiukkaset" value="1">
+                                    <label class="ml-4" for="hiukkaset">
+                                        kun auringon elektronihiukkaset osuvat maan ilmakehään &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-check fa-lg" id="revontulet3" aria-hidden="true"></i>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="revontulet" id="lumisade" value="0">
+                                    <label class="ml-4" for="lumisade">
+                                        lumisateen loppuessa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-times fa-lg" id="revontulet4" aria-hidden="true"></i>
+                                    </label>
+                                </div><br>
+
+                                <p class="not_visible font-weight-bold" id="revontulet">
+                                    Revontulet ovat yleisimpiä Suomessa lapissa ja ne syntyvät auringon elektronihiukkasten osuessa ilmakehään.</p>
+
+                            </div>
+                        </section>
+                        <section class="row justify-content-md-center">
+
+                            <div class="col-md-9">
+                                <h3 class="mt-5 mb-4">5. Veden kiehumispiste on?</h3>
+
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="vesi" id="75" value="0">
+                                    <label class="ml-4" for="75">
+                                        75 astetta &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-times fa-lg" id="vesi1" aria-hidden="true"></i>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="vesi" id="0" value="0">
+                                    <label class="ml-4" for="0">
+                                        0 astetta &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-times fa-lg" id="vesi2" aria-hidden="true"></i>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="vesi" id="32" value="0">
+                                    <label class="ml-4" for="32">
+                                        32,5 astetta &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-times fa-lg" id="vesi3" aria-hidden="true"></i>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="vesi" id="100" value="1">
+                                    <label class="ml-4" for="100">
+                                        100 astetta &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-check fa-lg" id="vesi4" aria-hidden="true"></i>
+                                    </label>
+                                </div><br>
+
+                                <p class="not_visible font-weight-bold" id="vesi">
+                                    Vesi alkaa kiehumaan sadassa asteessa.</p>
+
+                            </div>
+                        </section>
+                        <section class="row justify-content-md-center">   
+                            <div class="col-md-9">
+                                <h3 class="mt-5 mb-4">6. Maailman suurin nisäkäs on?</h3>
+
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="nisäkäs" id="valas" value="1">
+                                    <label class="ml-4" for="valas">
+                                        sinivalas &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-check fa-lg" id="nisäkäs1" aria-hidden="true"></i>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="nisäkäs" id="ihminen" value="0">
+                                    <label class="ml-4" for="ihminen">
+                                        ihminen &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-times fa-lg" id="nisäkäs2" aria-hidden="true"></i>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="nisäkäs" id="norppa" value="0">
+                                    <label class="ml-4" for="norppa">
+                                        norppa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-times fa-lg" id="nisäkäs3" aria-hidden="true"></i>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="nisäkäs" id="hepo" value="0">
+                                    <label class="ml-4" for="hepo">
+                                        virtahepo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-times fa-lg" id="nisäkäs4" aria-hidden="true"></i>
+                                    </label>
+                                </div><br>
+
+                                <p class="not_visible font-weight-bold" id="nisäkäs">
+                                    Nisäkkäät ovat tasalämpöisiä, selkärankaisia, jotka yleensä synnyttävät eläviä poikasia. Suurin nisäkäs on Sinivalas.</p>
+
+                            </div>
+                        </section>
+                        <section class="row justify-content-md-center">    
+                            <div class="col-md-9">
+                                <h3 class="mt-5 mb-4">7. Kalat hengittävät?</h3>
+
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="kalat" id="kidukset" value="1">
+                                    <label class="ml-4" for="kidukset">
+                                        kiduksilla &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-check fa-lg" id="kalat1" aria-hidden="true"></i>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="kalat" id="suomut" value="0">
+                                    <label class="ml-4" for="suomut">
+                                        suomuilla &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-times fa-lg" id="kalat2" aria-hidden="true"></i>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="kalat" id="pyrstö" value="0">
+                                    <label class="ml-4" for="pyrstö">
+                                        pyrstöllä &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-times fa-lg" id="kalat3" aria-hidden="true"></i>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="kalat" id="sisukset" value="0">
+                                    <label class="ml-4" for="sisukset">
+                                        sisuksilla &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-times fa-lg" id="kalat4" aria-hidden="true"></i>
+                                    </label>
+                                </div><br>
+
+                                <p class="not_visible font-weight-bold" id="kalat">
+                                    Kidukset ovat kalojen hengityselimet.</p>
+
+                            </div>
+                        </section>
+                        <section class="row justify-content-md-center">   
+                            <div class="col-md-9 ala">
+                                <h3 class="mt-5 mb-4">8. Suomen eteläisin kaupunki on?</h3>
+
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="city" id="hesa" value="0">
+                                    <label class="ml-4" for="hesa">
+                                        Helsinki &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-times fa-lg" id="city1" aria-hidden="true"></i>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="city" id="hanko" value="1">
+                                    <label class="ml-4" for="hanko">
+                                        Hanko &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-check fa-lg" id="city2" aria-hidden="true"></i>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="city" id="turku" value="0">
+                                    <label class="ml-4" for="turku">
+                                        Turku &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-times fa-lg" id="city3" aria-hidden="true"></i>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="city" id="jkl" value="0">
+                                    <label class="ml-4" for="jkl">
+                                        Jyväskylä &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-times fa-lg" id="city4" aria-hidden="true"></i>
+                                    </label>
+                                </div><br>
+
+                                <p class="not_visible font-weight-bold" id="city">
+                                    Rantakaupunki Hangolla on rantaviivaa 130 kilometriä ja se on Suomen eteläisin kaupunki.</p>
+                            </div>
+
+                        </section>
+
+                        <div class="text-center">
+                            <p class="mt-5">
+                                <i class="far fa-gem"></i>
+                                <i class="far fa-meh fa-spin"></i>
+                                <i class="far fa-thumbs-up"></i>
+                                <span class="mt-5 font-weight-bold" id="palkinto"></span></p><br>
+                        </div>   
+                        <div class="row justify-content-md-center mb-5">   
+                            <a href="" class="btn btn-secondary col-sm-4" role="button" id="uudestaan">Uudestaan&nbsp;&nbsp;</a>
+                        </div>
+                    </div>    
+                </div>         
+
+            </main>
+            <footer class="row bg_purple text_color_white jalan_tekstit text-center">
+                <div class="col-6 col-sm mt-1 p-2">
+                    <p class="mb-0 mt-0">Alisa</p>
+                    <p class="">Luomanmäki</p>
+                </div>
+                <div class="col-6 col-sm mt-1 p-2">
+                    <p class="mb-0">Henri</p>
+                    <p class="">Sipola</p>
+                </div>
+                <div class="col-6 col-sm mt-1 p-2">
+                    <p class="mb-0">Jonna</p>
+                    <p class="">Nykvist</p>
+                </div>
+                <div class="col-6 col-sm mt-1 p-2">
+                    <p class="mb-0">Josie</p>
+                    <p class="">Kallio</p>
+                </div>
+                <div class="col-6 col-sm mt-1 p-2">
+                    <p class="mb-0">Juuso</p>
+                    <p class="">Seppälä</p>
+                </div>
+                <div class="col-6 col-sm mt-1 p-2">
+                    <p class="mb-0">Mika</p>
+                    <p class="">Väisänen</p>
+                </div>
+                <hr class="mt-1 foot_hr">
+                <div class="col-12 pt-2 pb-2">   
+                    <p class="h3">Verkkoturistit </p>
+                    <p class="h3">2020</p>
+                </div>
+            </footer>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="../js/animation.js"></script>
+        <script src="../js/visa_väisänen.js" type="text/javascript"></script>
+        
+    </body>
+
+</html>

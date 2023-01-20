@@ -1,0 +1,105 @@
+/* Henri Sipola */
+
+.welcome {
+    margin-bottom: 1em;
+}
+
+/* Intro screen */
+
+.intro {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.highscores {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.score {
+    font-weight: bold;
+}
+
+.grayed-out {
+    color:#a1aaa8;
+}
+
+/* Game screen */
+
+.question {
+    font-size: 3em;
+}
+
+#points {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#answer {
+    display: inline-block;
+    width: 1em;
+    margin:auto;
+}
+
+.keypad {
+    font-weight: bold;
+}
+
+/* Animations */
+
+.correct {
+    animation-name: correct-animation;
+    animation-duration: 1s;
+}
+
+.incorrect {
+    animation-name: incorrect-animation;
+    animation-duration: 1s;
+}
+
+
+.correct-text {
+    animation-name: correct-text-animation;
+    animation-duration: 1s;
+}
+
+.incorrect-text {
+    animation-name: incorrect-text-animation;
+    animation-duration: 1s;
+}
+
+.fa-bahai {
+    font-size: .5em;
+    margin-right: .5em;
+    margin-top: .5em;
+    animation-name: shine-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes correct-animation {
+    0% {background-color:green}
+    100% {background-color: initial;}
+}
+
+@keyframes incorrect-animation {
+    0% {background-color:red}
+    100% {background-color: initial;}
+}
+
+@keyframes correct-text-animation {
+    0% {color:green}
+    100% {color: initial;}
+}
+
+@keyframes incorrect-text-animation {
+    0% {color:red}
+    100% {color: initial;}
+}
+
+@keyframes shine-animation {
+    0% {opacity: 1;}
+    40% {opacity: 0;}
+    80% {opacity: 0;}
+    100% {opacity: 1;}
+}

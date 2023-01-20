@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<html lang="fi">
+
+    <head>
+        <title>Takasivu</title>
+        <meta name="description" content="Alaluokkien opetussivusto: Takasivu">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Author" content="Verkkoturistit">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+              integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+              integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-replace-svg="nest"></script>
+        <link href="css/styles.css" rel="stylesheet">
+        <link href="css/takasivu.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <body>
+        <div class="container">
+            <!-- Otsikko-banneri ja navigointi -->
+            <header>
+                <div class="row jumbotron">
+                    <div class="col-12 col-sm-8 ylapalkki">
+                        <h1 class="padding">ABC-123 Testaa oppimaasi</h1>
+                        <h3 class="padding">Tietovisoja ja matematiikan tehtäviä</h3>
+                    </div>
+                    <!-- Animaatio -->
+                    <div class="col-12 col-sm-4 align-content-sm-center">
+                        <span class="fa-stack fa-4x" id="aurinko">
+                            <i class="far fa-sun fa-stack-2x fa-spin" aria-hidden="true"></i>
+                            <i class="fas fa-smile fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                </div>
+                <!-- Navigaatio -->
+                <nav class="navbar navbar-expand-sm row bg_ylapalkki">
+                    <button class="navbar-toggler" type="button"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent" 
+                            aria-controls="navbarSupportedContent" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav h4">
+                            <li class="nav-item bg_ylapalkki">
+                                <a class="nav-link padding" href="index.html" id="etusivu">
+                                    <i class="fas fa-bolt"></i>
+                                    Etusivu
+                                    <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item bg_ylapalkki active">
+                                <a class="nav-link padding"
+                                   href="takasivu.html" id="tietojameista">
+                                    <i class="fab fa-earlybirds"></i>
+                                    Tekijät
+                                </a>
+                            </li>
+                            <!-- Visavalikko -->
+                            <li class="nav-item dropdown bg_ylapalkki">
+                                <a class="nav-link padding" href="#"
+                                   id="visaDropdown" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true"
+                                   aria-expanded="false">
+                                    <i class="fas fa-crown"></i>
+                                    Visa
+                                </a>
+                                <div class="dropdown-menu leveytta"
+                                     aria-labelledby="visaDropdown">
+                                    <a class="dropdown-item text-center"
+                                       href="visasivut/alisa_visa.html">Kalevala-visa</a>
+                                    <a class="dropdown-item text-center"
+                                       href="visasivut/henri_visa.html">Maantiedon visa</a>
+                                    <a class="dropdown-item text-center" 
+                                       href="visasivut/jonna_visa.html">Suomen historian visa</a>
+                                    <!-- <a class="dropdown-item text-center" 
+                                       href="visasivut/josie_visa.html">Josien visa</a> -->
+                                    <a class="dropdown-item text-center" 
+                                       href="visasivut/juuso_visa.html">Antiikin Rooma visa</a>
+                                    <a class="dropdown-item text-center" 
+                                       href="visasivut/mika_visa.html">Ympäristötiedon visa</a>
+                                </div>
+                            </li>
+                            <!-- Matikkavalikko -->
+                            <li class="nav-item dropdown bg_ylapalkki">
+                                <a class="nav-link padding" href="#" id="matikkaDropdown"
+                                   role="button" data-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-brain"></i>
+                                    Matematiikka
+                                </a>
+                                <div class="dropdown-menu leveytta" 
+                                     aria-labelledby="matikkaDropdown">
+                                    <a class="dropdown-item text-center"
+                                       href="matikkasivut/alisa_matikka.html">Kertotaulun harjoittelu</a>
+                                    <a class="dropdown-item text-center"
+                                       href="matikkasivut/henri_matikka.html">Jakolaskut</a>
+                                    <a class="dropdown-item text-center"
+                                       href="matikkasivut/jonna_matikka.html">Prosenttilaskut</a>
+                                    <!-- <a class="dropdown-item text-center"
+                                       href="matikkasivut/josie_matikka.html">Josien
+                                        matikka</a> -->
+                                    <a class="dropdown-item text-center"
+                                       href="matikkasivut/juuso_matikka.html">Vähennyslaskut</a>
+                                    <a class="dropdown-item text-center"
+                                       href="matikkasivut/mika_matikka.html">Yhteenlaskut</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </header>
+            <!-- Main -->
+            <main class="row bg_tausta_1 ">
+
+                <div class="col-12 welcome text-center">
+                    <h1 class="display-4 padding_bottom padding">Tietoa meistä</h1>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 prof text-center padding_bottom">
+                    <img src="img/takasivu/luomanmaki.jpg" alt="" class="takaimg"/>
+                    <h5 class="padding_top">Alisa Luomanmäki</h5>
+                    <hr>
+                    <p> Aloitin opiskelut keväällä 2020 IT-tradenomiksi OAMK:ssa.
+                        Olen valmistunut 2007 vuonna media-assistentiksi. Harrastan 
+                        viherkasvien hoitoa ja koodaamista. Olen suunnittelut joskus
+                        kirjoittavani kirjan, pohjautuen omaan fantasiamaailmaani.</p>
+                    <p>Tällä sivustolla olen tehnyt:</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Sivun rakenteen suunnittelu</li>
+                        <li class="list-group-item">Navbarin visuaalinen ulkonäkö ja koodaus</li>
+                        <li class="list-group-item">Värien käyttö, fontit ja typografia</li>
+                        <li class="list-group-item">Headerin suunnittelu
+                            <ul>
+                                <li>
+                                    Gábor Adonyi
+                                    <a href="https://pixabay.com/fi/photos/koulu-oppiminen-3592120/"
+                                       target="blank">Headerin kuva</a> Lisenssi: Pixabay License
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="list-group-item">Kalevala-visa
+                            <ul>
+                                <li>Kalevala-kuvat &copy; Alisa Luomanmäki 2020</li>
+                            </ul>
+                        </li>
+                        <li class="list-group-item">Kertolaskun harjoittelu
+                            <ul>
+                                <li>
+                                    Game Art 2D
+                                    <a href="https://www.gameart2d.com/cute-girl-free-sprites.html"
+                                       target="blank">Punatukkainen tyttö</a> Lisenssi: CC
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-group-item muutos">
+                            <a href=" https://github.com/Sisarus" target="blank">
+                                <i class="fab fa-github padding"></i></a>
+                            <a href="https://www.linkedin.com/in/alisa-luomanm%C3%A4ki-801191192/" target="blank">
+                                <i class="fab fa-linkedin padding"></i></a>    
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 text-center prof">
+
+                    <img src="img/takasivu/henri.jpg" alt="henri takasivu" class="takaimg"/>
+                    <h5 class="padding_top">Henri Sipola</h5>
+                    <hr>  
+                    <p> Olen ensimmäisen vuoden tietojenkäsitteyn opiskelija OAMK:ssa. Vapaa-aika
+                        kuluu pelikehityksen parissa.</p>
+                    <p>Tällä sivustolla olen tehnyt:</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Sivuston rakenteen toteutus</li>
+                        <li class="list-group-item">Header animaation suunnittelu ja toteutus</li>
+                        <li class="list-group-item">Maantiedon visa</li>
+                        <li class="list-group-item">Jakolaskujen harjoittelu</li>
+
+
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 text-center prof">
+
+                    <img src="img/takasivu/vaisanen.jpg" alt="" class="takaimg"/>
+                    <h5 class="padding_top">Mika Väisänen</h5>
+                    <hr>
+                    <p>Opiskelen tietojenkäsittelyä OAMK:ssa. Olen 37 vuotias ja kotoisin
+                        Joensuusta.</p>
+                    <p>Tällä sivustolla olen tehnyt:</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Sivun etusivun suunnittelu
+                            <ul>
+                                <li>
+                                    StartupStockPhotos
+                                    <a href="https://pixabay.com/fi/photos/lapset-win-menestys-videopeli-593313/"
+                                       target="blank">Innostuneet lapset</a> Lisenssi: Pixabay License
+                                </li>
+                                <li>
+                                    Pexels
+                                    <a href="https://pixabay.com/fi/photos/asiakirja-koulutus-k%C3%A4si-tietoa-2178656/"
+                                       target="blank">Oppija</a> Lisenssi: Pixabay License
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="list-group-item">Sivun etusivun toteutus</li>
+                        <li class="list-group-item">Ympäristötiedon visa</li>
+                        <li class="list-group-item">Yhteenlaskun harjoittelu</li>
+
+                    </ul>
+
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 text-center prof">
+
+                    <img src="img/takasivu/seppala.jpg" alt="" class="takaimg"/>
+
+                    <h5 class="padding_top">Juuso Seppälä</h5>
+                    <hr>
+                    <p>Olen 31-vuotias tamperelainen, joka näin vanhemmalla 
+                        iällä päätti hypätä IT-alan maailmaan, sekä tulevaisuudessa 
+                        luoda uraa tällä kentällä. Parhaillaan suoritan IT-tradenomin
+                        tutkintoa Oulun ammattikorkeakoulussa.</p>
+                    <p>Tällä sivustolla olen tehnyt:</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Footerin suunnittelu</li>
+                        <li class="list-group-item">Footerin toteutus</li>
+                        <li class="list-group-item">Antiikin Rooma visa</li>
+                        <li class="list-group-item">Vähennyslaskun harjoittelu</li>
+
+                    </ul>
+
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 text-center prof">
+
+                    <img src="img/takasivu/nykvist.jpg" alt="" class="takaimg"/>
+                    <h5 class="padding_top">Jonna Nykvist</h5>
+                    <hr>
+                    <p>Olen 26 vuotias Tampereella asuva tietojenkäsittelyn opiskelija.
+                        Opiskelen ensimmäistä vuotta OAMK:ssa. Vapaa-aika kuluu eläinten, koodauksen
+                        ja pelaamisen parissa.</p>
+                    <p>Tällä sivustolla olen tehnyt:</p>
+                    <ul class=" list-group list-group-flush">
+                        <li class="list-group-item">Takasivun suunnittelu
+                            <ul>
+                                <li>WandererCreative
+                                    <a href="https://pixabay.com/fi/vectors/tyhj%C3%A4-profiilikuva-mysteeri-mies-973460/">Tyhjä profiilikuva</a>
+                                    lisenssi: Pixabayn kuva
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-group-item">Takasivun toteutus</li>
+                        <li class="list-group-item">Suomen historian visa
+                            <ul>
+                                <li>Pexels
+                                    <a href="https://pixabay.com/fi/photos/vapaap%C3%A4iv%C3%A4t-auto-matka-reitti-1283014/" target="blank">Visan kuva</a> lisenssi: Pixabayn kuva
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-group-item">Prosenttilaskujen harjoittelu</li>
+
+                    </ul>
+
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 text-center prof">
+                    <img src="img/takasivu/josie.jpg" alt="" class="takaimg"/>
+
+                    <h5 class="padding_top">Josie Kallio</h5>
+                    <hr>
+                    <p>Tällä sivustolla olen tehnyt:</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Sivuston rakenteen suunnittelu</li>
+                    </ul>
+
+                </div>
+            </main>
+
+            <!-- Footer -->
+            <footer class="row bg_purple text_color_white jalan_tekstit text-center">
+                <div class="col-6 col-sm mt-1 p-2">
+                    <p class="mb-0 mt-0">Alisa</p>
+                    <p class="">Luomanmäki</p>
+                </div>
+                <div class="col-6 col-sm mt-1 p-2">
+                    <p class="mb-0">Henri</p>
+                    <p class="">Sipola</p>
+                </div>
+                <div class="col-6 col-sm mt-1 p-2">
+                    <p class="mb-0">Jonna</p>
+                    <p class="">Nykvist</p>
+                </div>
+                <div class="col-6 col-sm mt-1 p-2">
+                    <p class="mb-0">Josie</p>
+                    <p class="">Kallio</p>
+                </div>
+                <div class="col-6 col-sm mt-1 p-2">
+                    <p class="mb-0">Juuso</p>
+                    <p class="">Seppälä</p>
+                </div>
+                <div class="col-6 col-sm mt-1 p-2">
+                    <p class="mb-0">Mika</p>
+                    <p class="">Väisänen</p>
+                </div>
+                <hr class="mt-1 foot_hr">
+                <div class="col-12 pt-2 pb-2">   
+                    <p class="h3">Verkkoturistit </p>
+                    <p class="h3">2020</p>
+                </div>
+            </footer>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        <script src="js/animation.js"></script>
+
+    </body>
+
+</html>

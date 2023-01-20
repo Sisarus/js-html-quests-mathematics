@@ -1,0 +1,115 @@
+/* Intro div*/
+#intro_div {
+    background-color: lightskyblue;
+    color: white;
+    border-radius: 15px;
+    font-weight: bold;
+    margin-bottom: 2em;
+    padding: 10px;
+    padding-top: 1em;
+}
+
+/* Painikkeet*/
+#result_btn,
+#again_btn,
+#intro_btn {
+    background-color: rgb(185, 10, 185);
+    font-weight: bold;
+    color: white;
+}
+
+#result_btn:hover,
+#again_btn:hover,
+#intro_btn:hover {
+    background-color: rgb(235, 90, 235);
+}
+
+#result_btn {
+    margin-left: 10px;
+}
+
+/* Kysymys div*/
+#Q_page {
+    background-color: lightskyblue;
+    border-radius: 15px;
+    color: white;
+    margin-bottom: 1em;
+    padding: 20px;
+}
+
+#Q_page p {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+#theQ {
+    margin-left: 10px;
+    margin-bottom: 1em;
+} 
+
+#Q_opt {
+    margin-bottom: 1em;
+}
+
+/* Vastaus elementit 4 per div*/
+.answer {
+    color: white;
+    background-color: rgb(48, 146, 207);
+    text-align: left;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.answer:hover {
+    background-color: blue;
+}
+
+#a1,
+#a2,
+#a3,
+#a4 {
+    margin-bottom: 1em;
+}
+
+/* Sivun animaatiot*/
+.fa-flag-checkered {
+    float: right;
+}
+
+.fa-space-shuttle {
+    margin-left: 1em;
+    position: relative;
+    color: rgb(235, 90, 235);
+}
+
+.fa-star {
+    color: gold;    
+}
+
+/* Mitta-asteikko animaation alla*/
+#measure {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#measure li{
+    list-style-type: none;
+    display: block;
+    flex: 0 1 auto;
+}
+
+#mN {
+    color: white;
+    background-color: rgb(48, 146, 207);
+}
+
+/* Pisteosio*/
+#result_text {
+    color: white;
+    border-radius: 15px;
+    background-color: gold;
+}

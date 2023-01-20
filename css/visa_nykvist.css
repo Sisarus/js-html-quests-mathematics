@@ -1,0 +1,49 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11-Apr-2020, 13:31:26
+    Author     : jonna
+*/
+.valittu {
+    background-color: deepskyblue;
+    color: white;
+}
+
+.väärä {
+    background-color: tomato;
+    font-style: italic;
+}
+
+.oikea {
+    font-weight: bold;
+    background-color: greenyellow;
+}
+ul {
+    list-style: none;
+}
+.not_visible {
+    display: none;
+}
+img {
+    max-width: 100%;
+}
+button {
+
+    background-color: #202020;
+}
+.pt {
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 30px;
+}
+label {
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 20px;
+}
+.info {
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 20px;
+    font-style: italic;
+}

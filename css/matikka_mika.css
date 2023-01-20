@@ -1,0 +1,53 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20.4.2020, 12:54:20
+    Author     : mikav
+*/
+
+#vastaus {
+    width: 90px;
+    
+}
+
+.teht {
+    font-size: 2em;
+}
+
+p#tehtNro, p#tähti {
+    display: inline;
+}
+
+/*nappien tyylit*/
+#tarkista, #aloita, #seuraava, #tulosta, #alkuun {
+    background-color: #701a59;
+    color: white;
+}
+/*fontawesome lamppujen värejä*/
+#oikea {
+    background: linear-gradient(to top, white 0%, yellow 170%);;
+    border-radius: 70px;
+    font-size: 1.2em;
+    margin-right: 5px;
+}
+.fa-flushed {
+    background-color: yellow;
+    border-radius: 45px;
+    font-size: 1.2em;
+    margin-right: 5px;
+}
+
+.fa-medapps {
+    margin-right: 5px;
+}
+#loppuVastaus {
+    font-size: 2em;
+    font-family: 'Fredoka One', cursive;
+}
+
+#lamput {
+    font-size: 2em;
+}

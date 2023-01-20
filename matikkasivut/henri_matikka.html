@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html lang="fi">
+
+<head>
+    <title>Jakolaskut</title>
+    <meta name="description" content="Alaluokkien opetussivusto: Matematiikka">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Henri">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-replace-svg="nest"></script>
+    <link href="../css/styles.css" rel="stylesheet">
+    <link href="../css/matematiikka_sipola.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Otsikko-banneri ja navigointi -->
+        <header>
+            <div class=" row jumbotron">
+                <div class="col-12 col-sm-8 ylapalkki">
+                    <h1 class="padding">ABC-123 Testaa oppimaasi</h1>
+                    <h3 class="padding">Tietovisoja ja matematiikan tehtäviä</h3>
+                </div>
+                <!-- Animaatio -->
+                <div class="col-12 col-sm-4 align-content-sm-center">
+                    <span class="fa-stack fa-4x" id="aurinko">
+                        <i class="far fa-sun fa-stack-2x fa-spin" aria-hidden="true"></i>
+                        <i class="fas fa-smile fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    </span>
+                </div>
+            </div>
+            <!-- Navigaatio -->
+            <nav class="navbar navbar-expand-sm row bg_ylapalkki">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav h4">
+                        <li class="nav-item bg_ylapalkki">
+                            <a class="nav-link padding" href="../index.html" id="etusivu">
+                                <i class="fas fa-bolt text_color_purple"></i>
+                                Etusivu
+                                <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item bg_ylapalkki">
+                            <a class="nav-link padding" href="../takasivu.html" id="tietojameista">
+                                <i class="fab fa-earlybirds"></i>
+                                Tekijät
+                            </a>
+                        </li>
+                        <!-- Visavalikko -->
+                        <li class="nav-item dropdown bg_ylapalkki">
+                            <a class="nav-link padding" href="#" id="visaDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-crown"></i>
+                                Visa
+                            </a>
+                            <div class="dropdown-menu leveytta" aria-labelledby="visaDropdown">
+                                <a class="dropdown-item text-center" href="../visasivut/alisa_visa.html">Kalevala-visa</a>
+                                <a class="dropdown-item text-center" href="../visasivut/henri_visa.html">Maantiedon visa</a>
+                                <a class="dropdown-item text-center" href="../visasivut/jonna_visa.html">Suomen historian visa</a>
+                                <!-- <a class="dropdown-item text-center" href="../visasivut/josie_visa.html">Josien visa</a> -->
+                                <a class="dropdown-item text-center" href="../visasivut/juuso_visa.html">Antiikin Rooma visa</a>
+                                <a class="dropdown-item text-center" href="../visasivut/mika_visa.html">Ympäristötiedon visa</a>
+                            </div>
+                        </li>
+                        <!-- Matikkavalikko -->
+                        <li class="nav-item dropdown bg_ylapalkki active">
+                            <a class="nav-link padding" href="#" id="matikkaDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-brain"></i>
+                                Matematiikka
+                            </a>
+                            <div class="dropdown-menu leveytta" aria-labelledby="matikkaDropdown">
+                                <a class="dropdown-item text-center" href="alisa_matikka.html">Kertotaulun harjoittelu</a>
+                                <a class="dropdown-item text-center active" href="henri_matikka.html">Jakolaskut</a>
+                                <a class="dropdown-item text-center" href="jonna_matikka.html">Prosenttilaskut</a>
+                                <!-- <a class="dropdown-item text-center" href="josie_matikka.html">Josien
+                                    matikka</a> -->
+                                <a class="dropdown-item text-center" href="juuso_matikka.html">Vähennyslaskut</a>
+                                <a class="dropdown-item text-center" href="mika_matikka.html">Yhteenlaskut</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        </header>
+
+        <main class="row bg_tausta_1">
+
+            <div class="col-12 welcome text-center">
+                <h1>Jakolaskut</h1>
+            </div>
+
+            <!-- intro -->
+            <div class="col-12 intro text-center collapse show">
+                <div class="col-12">
+                    <h2>Tervetuloa jakolaskupeliin!</h2>
+                    <p>Yritä vastata niin moneen kysymykseen kuin ehdit ennen aikarajan umpeutumista!</p>
+                </div>
+                <div class="row highscores mb-1">
+                    <div class="col-12 mt-4 mb-4">
+                        <h3>Valitse vaikeusaste:</h3>
+                    </div>
+                    <div class="col-4">
+                        <h4 class="text_color_green">Helppo</h4>
+                        <p><span class="level" data-value="easy"><i class="far fa-gem fa-3x"></i></span></p>
+                        <p><span class="score text_color_green" id="easy-score">Paras tulos 0</span></p>
+                    </div>
+                    <div class="col-4">
+                        <h4 class="text_color_blue">Keskitaso</h4>
+                        <p><span class="level" data-value="medium"><i class="far fa-gem fa-3x"></i></span></p>
+                        <p><span class="score text_color_blue" id="medium-score">Paras tulos 0</span></p>
+                    </div>
+                    <div class="col-4">
+                        <h4 class="text_color_red">Vaativa</h4>
+                        <p><span class="level" data-value="hard"><i class="far fa-gem fa-3x"></i></span></p>
+                        <p><span class="score text_color_red" id="hard-score">Paras tulos 0</span></p>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary m-2" id="start-btn">Aloita!</button>
+            </div>
+
+            <!-- game -->
+            <div class="col-12 game collapse">
+
+                <!-- progress-bar -->
+                <div class="col-12">
+                    <div class="col-12">
+                        <div class="mb-2 progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- points -->
+                <div class="col-12 text-center">
+                    <p><span id="points"></span></p>
+                </div>
+
+                <!-- question -->
+                <div class="col-12 question text-center">
+                    <p><span id="numerator"></span> / <span id="denominator"></span> = <span id="answer"></span></p>
+                </div>
+
+                <!-- keypad -->
+                <div class="row keypad justify-content-md-center">
+                    <div class="col-12 col-md-6 btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                        <div class="btn-group col-12" role="group" aria-label="first group">
+                            <button type="button" class="col-4 btn btn-primary keyboard-number-btn" value="1">1</button>
+                            <button type="button" class="col-4 btn btn-primary keyboard-number-btn" value="2">2</button>
+                            <button type="button" class="col-4 btn btn-primary keyboard-number-btn" value="3">3</button>
+                        </div>
+                        <div class="btn-group col-12" role="group" aria-label="second group">
+                            <button type="button" class="col-4 btn btn-primary keyboard-number-btn" value="4">4</button>
+                            <button type="button" class="col-4 btn btn-primary keyboard-number-btn" value="5">5</button>
+                            <button type="button" class="col-4 btn btn-primary keyboard-number-btn" value="6">6</button>
+                        </div>
+                        <div class="btn-group col-12" role="group" aria-label="third group">
+                            <button type="button" class="col-4 btn btn-primary keyboard-number-btn" value="7">7</button>
+                            <button type="button" class="col-4 btn btn-primary keyboard-number-btn" value="8">8</button>
+                            <button type="button" class="col-4 btn btn-primary keyboard-number-btn" value="9">9</button>
+                        </div>
+                        <div class="btn-group col-12 mb-4" role="group" aria-label="fourth group">
+                            <button type="button" class="col-4 btn btn-warning" id="keyboard-cancel-btn">C</button>
+                            <button type="button" class="col-4 btn btn-primary keyboard-number-btn" value="0">0</button>
+                            <button type="button" class="col-4 btn btn-success" id="keyboard-return-btn">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- result -->
+            <div class="col-12 results collapse text-center">
+                <h3><span id="game-result"></span></h3>
+                <div class="new-highscore collapse">
+                    <h2>Uusi ennätys tasolla: <span id="new-highscore-lvl"></span></h2>
+                    <p>
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-gem fa-stack-1x" id="result-gem"></i>
+                            <i class="fas fa-bahai fa-stack-1x text-primary" aria-hidden="true"></i>
+                        </span>
+                    </p>
+                </div>
+                <button type="button" class="btn btn-primary m-2" id="back-btn">Alkuun</button>
+
+            </div>
+        </main>
+        <footer class="row bg_purple text_color_white jalan_tekstit text-center">
+            <div class="col-6 col-sm mt-1 p-2">
+                <p class="mb-0 mt-0">Alisa</p>
+                <p class="">Luomanmäki</p>
+            </div>
+            <div class="col-6 col-sm mt-1 p-2">
+                <p class="mb-0">Henri</p>
+                <p class="">Sipola</p>
+            </div>
+            <div class="col-6 col-sm mt-1 p-2">
+                <p class="mb-0">Jonna</p>
+                <p class="">Nykvist</p>
+            </div>
+            <div class="col-6 col-sm mt-1 p-2">
+                <p class="mb-0">Josie</p>
+                <p class="">Kallio</p>
+            </div>
+            <div class="col-6 col-sm mt-1 p-2">
+                <p class="mb-0">Juuso</p>
+                <p class="">Seppälä</p>
+            </div>
+            <div class="col-6 col-sm mt-1 p-2">
+                <p class="mb-0">Mika</p>
+                <p class="">Väisänen</p>
+            </div>
+            <hr class="mt-1 foot_hr">
+            <div class="col-12 pt-2 pb-2">   
+                <p class="h3">Verkkoturistit </p>
+                <p class="h3">2020</p>
+            </div>
+        </footer>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="../js/animation.js"></script>
+        <script src="../js/matematiikka_sipola.js"></script>
+
+</body>
+
+</html>

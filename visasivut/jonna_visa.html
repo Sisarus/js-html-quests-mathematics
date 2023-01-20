@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+
+<html lang="fi">
+
+<head>
+    <title>Suomen historian visa</title>
+    <meta name="description" content="Alaluokkien opetussivusto: Visa">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Jonna">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-replace-svg="nest"></script>
+    <link href="../css/styles.css" rel="stylesheet">
+    <link href="../css/visa_nykvist.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Otsikko-banneri ja navigointi -->
+        <header>
+            <div class=" row jumbotron">
+                <div class="col-12 col-sm-8 ylapalkki">
+                    <h1 class="padding">ABC-123 Testaa oppimaasi</h1>
+                    <h3 class="padding">Tietovisoja ja matematiikan tehtäviä</h3>
+                </div>
+                <!-- Animaatio -->
+                <div class="col-12 col-sm-4 align-content-sm-center">
+                    <span class="fa-stack fa-4x" id="aurinko">
+                        <i class="far fa-sun fa-stack-2x fa-spin" aria-hidden="true"></i>
+                        <i class="fas fa-smile fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    </span>
+                </div>
+            </div>
+            <!-- Navigaatio -->
+            <nav class="navbar navbar-expand-sm row bg_ylapalkki">
+                <button class="navbar-toggler" type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarSupportedContent" 
+                        aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav h4">
+                        <li class="nav-item bg_ylapalkki">
+                            <a class="nav-link padding" href="../index.html" id="etusivu">
+                                <i class="fas fa-bolt text_color_purple"></i>
+                                Etusivu
+                                    <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item bg_ylapalkki">
+                            <a class="nav-link padding"
+                               href="../takasivu.html" id="tietojameista">
+                                <i class="fab fa-earlybirds"></i>
+                                Tekijät
+                            </a>
+                        </li>
+                        <!-- Visavalikko -->
+                        <li class="nav-item dropdown bg_ylapalkki active">
+                            <a class="nav-link padding" href="#"
+                               id="visaDropdown" role="button"
+                               data-toggle="dropdown" aria-haspopup="true"
+                               aria-expanded="false">
+                                <i class="fas fa-crown"></i>
+                                Visa
+                            </a>
+                            <div class="dropdown-menu leveytta"
+                                 aria-labelledby="visaDropdown">
+                                <a class="dropdown-item text-center"
+                                   href="alisa_visa.html">Kalevala-visa</a>
+                                <a class="dropdown-item text-center"
+                                   href="henri_visa.html">Maantiedon visa</a>
+                                <a class="dropdown-item text-center active" 
+                                   href="jonna_visa.html">Suomen historian visa</a>
+                                <!-- <a class="dropdown-item text-center" 
+                                   href="josie_visa.html">Josien visa</a> -->
+                                <a class="dropdown-item text-center" 
+                                   href="juuso_visa.html">Antiikin Rooma visa</a>
+                                <a class="dropdown-item text-center" 
+                                   href="mika_visa.html">Ympäristötiedon visa</a>
+                            </div>
+                        </li>
+                        <!-- Matikkavalikko -->
+                        <li class="nav-item dropdown bg_ylapalkki">
+                            <a class="nav-link padding" href="#" id="matikkaDropdown"
+                               role="button" data-toggle="dropdown"
+                               aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-brain"></i>
+                                Matematiikka
+                            </a>
+                            <div class="dropdown-menu leveytta" 
+                                 aria-labelledby="matikkaDropdown">
+                                <a class="dropdown-item text-center"
+                                   href="../matikkasivut/alisa_matikka.html">Kertotaulun harjoittelu</a>
+                                <a class="dropdown-item text-center"
+                                   href="../matikkasivut/henri_matikka.html">Jakolaskut</a>
+                                <a class="dropdown-item text-center"
+                                   href="../matikkasivut/jonna_matikka.html">Prosenttilaskut</a>
+                                <!-- <a class="dropdown-item text-center"
+                                   href="../matikkasivut/josie_matikka.html">Josien
+                                    matikka</a> -->
+                                <a class="dropdown-item text-center"
+                                   href="../matikkasivut/juuso_matikka.html">Vähennyslaskut</a>
+                                <a class="dropdown-item text-center"
+                                   href="../matikkasivut/mika_matikka.html">Yhteenlaskut</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        </header>
+
+            <main class="row bg_tausta_1 ">
+
+                <div class="col-12 welcome text-center">
+                    <h1 class="display-4">Suomen historian tietovisa</h1>
+                </div>
+
+                <div class="col-12 text-center">
+                    <p class="font-weight-bold pt">Kuka oli Suomen ensimmäinen presidentti? Milloin talvisota 
+                        käytiin? Oliko hopearaha Suomen valuutta ennen euroa? Testaa taitojasi
+                        lyhyessä visassa kiperillä kysymyksillä Suomesta ja sen historiasta!
+                    </p>
+                </div>
+
+                    <div class="col-12 text-center" >
+                        <img src="../img/holidays-1283014_640.jpg" alt=""/>
+                    </div>
+                <br>
+                <br>
+                <br>
+                <div class="col-12 d-flex justify-content-center text-center">
+                    <div>
+                    <h2>Kysymys 1</h2>
+                    <p class="pt">Minä vuonna Suomesta tuli itsenäinen valtio?</p>
+                    <ul>
+                        <li>
+                            <input type="radio" id="v11" name="vastaus1" class="vastaus1" value="0">
+                            <label for="v11">1953</label> 
+                        </li>
+                        <li>
+                            <input type="radio" id="v12" name="vastaus1" class="vastaus1" value="0">
+                            <label for="v12">1897</label> 
+                        </li>
+                        <li>
+                            <input type="radio" id="v13" name="vastaus1" class="vastaus1" value="1">
+                            <label for="v13">1917</label> 
+                        </li>
+                        <li>
+                            <input type="radio" id="v14" name="vastaus1" class="vastaus1" value="0">
+                            <label for="v14">2001</label> 
+                        </li>
+                    </ul>
+                    <p class="not_visible info" id="vas1">Itsenäisyysjulistus hyväksytiin Suomen eduskunnassa 6.12.1917</p>
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-center text-center">
+                    <div>
+                                    <h2>Kysymys 2</h2>
+                    <p class="pt">Kuka oli Suomen ensimmäinen presidentti?</p>
+                    <ul>
+                        <li>
+                            <input type="radio" id="v21" name="vastaus2" class="vastaus2" value="0">
+                            <label for="v21">Urho Kekkonen</label> 
+                        </li>
+                        <li>
+                            <input type="radio" id="v22" name="vastaus2" class="vastaus2" value="1">
+                            <label for="v22">K.J. Ståhlberg</label> 
+                        </li>
+                        <li>
+                            <input type="radio" id="v23" name="vastaus2" class="vastaus2" value="0">
+                            <label for="v23">Sauli Niinistö</label> 
+                        </li>
+                        <li>
+                            <input type="radio" id="v24" name="vastaus2" class="vastaus2" value="0">
+                            <label for="v24">Martti Ahtisaari</label> 
+                        </li>
+                    </ul>
+                    <p class="not_visible info" id="vas2">Kaarlo Juho Ståhlberg oli 
+                        suomalainen oikeustieteilijä, poliitikko sekä Suomen 
+                        ensimmäinen tasavallan presidentti vuosina 1919-1925. </p>
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-center text-center">
+                    <div>
+                                    <h2>Kysymys 3</h2>
+                    <p class="pt">Kuka on tällä hetkellä Suomen presidentti?</p>
+                    <ul>
+                        <li>
+                            <input type="radio" id="v31" name="vastaus3" class="vastaus3" value="0">
+                            <label for="v31">Donald Trump</label> 
+                        </li>
+                        <li>
+                            <input type="radio" id="v32" name="vastaus3" class="vastaus3" value="0">
+                            <label for="v32">Timo Soini</label> 
+                        </li>
+                        <li>
+                            <input type="radio" id="v33" name="vastaus3" class="vastaus3" value="1">
+                            <label for="v33">Sauli Niinistö</label> 
+                        </li>
+                        <li>
+                            <input type="radio" id="v34" name="vastaus3" class="vastaus3" value="0">
+                            <label for="v34">Sanna Marin</label> 
+                        </li>
+                    </ul>
+                    <p class="not_visible info" id="vas3">Sauli Niinistö on ollut Suomen presidentti 1.3.2012 lähtien.</p>
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-center text-center">
+                    <div>
+                                    <h2>Kysymys 4</h2>
+                    <p class="pt">Minkä kahden maan vallan alla Suomi on ollut?</p>
+                    <ul>
+                        <li>
+                            <input type="radio" id="v41" name="vastaus4" class="vastaus4" value="0">
+                            <label for="v41">Norja ja Ruotsi</label> 
+                        </li>
+                        <li>
+                            <input type="radio" id="v42" name="vastau4" class="vastaus4" value="0">
+                            <label for="v42">Saksa ja Italia</label> 
+                        </li>
+                        <li>
+                            <input type="radio" id="v43" name="vastaus4" class="vastaus4" value="0">
+                            <label for="v43">Tanska ja Norja</label> 
+                        </li>
+                        <li>
+                            <input type="radio" id="v44" name="vastaus4" class="vastaus4" value="1">
+                            <label for="v44">Venäjä ja Ruotsi</label> 
+                        </li>
+                    </ul>
+                    <p class="not_visible info" id="vas4">Ruotsin vallan alla Suomi 
+                        oli vuosina 1250-1809. Suomi kuului Suuriruhtinaskuntaan vuosina 1809-1917</p>
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-center text-center">
+                    <div>
+                                    <h2>Kysymys 5</h2>
+                    <p class="pt">Mikä on tällä hetkellä Suomen suurin uskonnollinen yhdyskunta?</p>
+                    <ul>
+                        <li>
+                            <input type="radio" id="v51" name="vastaus5" class="vastaus5" value="1">
+                            <label for="v51">Evankelis-luterilainen kirkko </label> 
+                        </li>
+                        <li>
+                            <input type="radio" id="v52" name="vastaus5" class="vastaus5" value="0">
+                            <label for="v52">Ortodoksinen kirkko</label> 
+                        </li>
+                        <li>
+                            <input type="radio" id="v53" name="vastaus5" class="vastaus5" value="0">
+                            <label for="v53">Islamilainen kirkko</label> 
+                        </li>
+                        <li>
+                            <input type="radio" id="v54" name="vastaus5" class="vastaus5" value="0">
+                            <label for="v54">Pakanallinen kirkko</label> 
+                        </li>
+                    </ul>
+                    <p class="not_visible info" id="vas5">Vuonna 2019 68,7% 
+                        suomalaisista kuului Suomen evankelis-luterilaiseen kirkkoon.</p>
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-center text-center">
+                    <div>
+                                    <h2>Kysymys 6</h2>
+                    <p class="pt">Minä vuonna Suomen sisällissota käytiin?</p>
+                    <ul>
+                        <li>
+                            <input type="radio" id="v61" name="vastaus6" class="vastaus6" value="0">
+                            <label for="v61">1901</label> 
+                        </li>
+                        <li>
+                            <input type="radio" id="v62" name="vastaus6" class="vastaus6" value="0">
+                            <label for="v62">1932</label> 
+                        </li>
+                        <li>
+                            <input type="radio" id="v63" name="vastaus6" class="vastaus6" value="1">
+                            <label for="v63">1918</label> 
+                        </li>
+                        <li>
+                            <input type="radio" id="v64" name="vastaus6" class="vastaus6" value="0">
+                            <label for="v64">2011</label> 
+                        </li>
+                    </ul>
+                    <p class="not_visible info" id="vas6">Suomen sisällissota käytiin
+                        Suomen senaatin ja sitä vastaan kapinoineen Suomen
+                        kansanvaltuuskunnan johtamien joukkojen välillä. 
+                        Senaatin asevoimina olivat valkoiset joukot ja
+                        kansanvaltuuskunnan joukkoina Suomen Punainen 
+                        Kaarti eli punaiset. C. G. Mannerheim johti valkoiset
+                        joukot voittoon 6.4.</p>
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-center text-center">
+                    <div>
+                                    <h2>Kysymys 7</h2>
+                    <p class="pt">Mikä oli Suomen ensimmäinen pääkaupunki?</p>
+                    <ul>
+                        <li>
+                            <input type="radio" id="v71" name="vastaus7" class="vastaus7" value="0">
+                            <label for="v71">Kotka</label> 
+                        </li>
+                        <li>
+                            <input type="radio" id="v72" name="vastaus7" class="vastaus7" value="0">
+                            <label for="v72">Helsinki</label> 
+                        </li>
+                        <li>
+                            <input type="radio" id="v73" name="vastaus7" class="vastaus7" value="1">
+                            <label for="v73">Turku</label> 
+                        </li>
+                        <li>
+                            <input type="radio" id="v74" name="vastaus7" class="vastaus7" value="0">
+                            <label for="v74">Hamina</label> 
+                        </li>
+                    </ul>
+                    <p class="not_visible info" id="vas7">Turku oli Suomen 
+                        epävirallinen pääkaupunki vuosina 1809-1812. Helsingistä
+                        tuli Suomen suuriruhtinaskunnan pääkaupunki vuonna 1812 
+                        ja Suomen tasavallan pääkaupunki 1917.</p>
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-center text-center">
+                    <div>
+                                    <h2>Kysymys 8</h2>
+                    <p class="pt">Ennen euroa Suomessa oli käytössä eri valuutta, mikä oli tämän valuutan nimi?</p>
+                    <ul>
+                        <li>
+                            <input type="radio" id="v81" name="vastaus8" class="vastaus8" value="1">
+                            <label for="v81">Markka</label> 
+                        </li>
+                        <li>
+                            <input type="radio" id="v82" name="vastaus8" class="vastaus8" value="0">
+                            <label for="v82">Hopearaha</label> 
+                        </li>
+                        <li>
+                            <input type="radio" id="v83" name="vastaus8" class="vastaus8" value="0">
+                            <label for="v83">Rupla</label> 
+                        </li>
+                        <li>
+                            <input type="radio" id="v84" name="vastaus8" class="vastaus8" value="0">
+                            <label for="v84">Oravannahka</label> 
+                        </li>
+                    </ul>
+                    <p class="not_visible info" id="vas8">Suomen markka oli Suomen rahayksikkö vuosina 1860-2002.</p>
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-center text-center">
+                    <div>
+                                    <h2>Kysymys 9</h2>
+                    <p class="pt">Vuodesta 1939 alkoi Suomen ja Neuvostoliiton välinen sota,
+                        talvisota. Minä vuonna talvisota loppui?</p>
+                    <ul>
+                        <li>
+                            <input type="radio" id="v91" name="vastaus9" class="vastaus9" value="0">
+                            <label for="v91">1930</label> 
+                        </li>
+                        <li>
+                            <input type="radio" id="v92" name="vastaus9" class="vastaus9" value="0">
+                            <label for="v92">1987</label> 
+                        </li>
+                        <li>
+                            <input type="radio" id="v93" name="vastaus9" class="vastaus9" value="1">
+                            <label for="v93">1940</label> 
+                        </li>
+                        <li>
+                            <input type="radio" id="v94" name="vastaus9" class="vastaus9" value="0">
+                            <label for="v94">1999</label> 
+                        </li>
+                    </ul>
+                    <p class="not_visible info" id="vas9">Talvisota käytiin 
+                        30.3.1939 - 13.3.1940 Suomen ja Neuvostoliiton välillä.</p>
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-center text-center">
+                    <div>
+                                    <h2>Kysymys 10</h2>
+                    <p class="pt">Mikä on Suomen kansalliseläin?</p>
+                    <ul>
+                        <li>
+                            <input type="radio" id="v101" name="vastaus10" class="vastaus10" value="0">
+                            <label for="v101">Joutsen</label> 
+                        </li>
+                        <li>
+                            <input type="radio" id="v102" name="vastaus10" class="vastaus10" value="1">
+                            <label for="v102">Karhu</label> 
+                        </li>
+                        <li>
+                            <input type="radio" id="v103" name="vastaus10" class="vastaus10" value="0">
+                            <label for="v103">Leijona</label> 
+                        </li>
+                        <li>
+                            <input type="radio" id="v104" name="vastaus10" class="vastaus10" value="0">
+                            <label for="v104">Suomenhevonen</label> 
+                        </li>
+                    </ul>
+                    <p class="not_visible info" id="vas10">Suomen kansalliseläin on 
+                        karhu. Muita keskenäisiä kansallisia symboleita ovat
+                        sinivalkoinen kansallislippu ja leijonavaakuna.</p>
+                    </div>
+                </div>
+                                   
+                
+
+                
+                
+                <div class="col-md  border-right text-center">
+                    <button id="message" class="btn btn-info"
+                            type="button">Laske tuloksesi</button>
+                </div> 
+                <div class="modal" tabindex="-1" role="dialog" id="mymessage">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="otsikko">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p id="viesti">Modal body text goes here.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Sulje</button> 
+                       <button type="button" class="btn btn-primary m-2" id="refresh">Kokeile uudestaan</button>
+                    </div>
+                </div>
+            </div>
+        </div>    
+
+            </main>
+            <footer class="row bg_purple text_color_white jalan_tekstit text-center">
+                <div class="col-6 col-sm-2 mt-1 p-2">
+                    <p class="mb-0 mt-0">Alisa</p>
+                    <p class="">Luomanmäki</p>
+                </div>
+                <div class="col-6 col-sm-2 mt-1 p-2">
+                    <p class="mb-0">Henri</p>
+                    <p class="">Sipola</p>
+                </div>
+                <div class="col-6 col-sm-2 mt-1 p-2">
+                    <p class="mb-0">Jonna</p>
+                    <p class="">Nykvist</p>
+                </div>
+                <div class="col-6 col-sm-2 mt-1 p-2">
+                    <p class="mb-0">Josie</p>
+                    <p class="">Kallio</p>
+                </div>
+                <div class="col-6 col-sm-2 mt-1 p-2">
+                    <p class="mb-0">Juuso</p>
+                    <p class="">Seppälä</p>
+                </div>
+                <div class="col-6 col-sm-2 mt-1 p-2">
+                    <p class="mb-0">Mika</p>
+                    <p class="">Väisänen</p>
+                </div>
+                <hr class="mt-1 foot_hr">
+                <div class="col-12 pt-2 pb-2">   
+                    <p class="h3">Verkkoturistit </p>
+                    <p class="h3">2020</p>
+                </div>
+            </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="../js/animation.js"></script>
+        <script src="../js/jonnan_visa_js.js" type="text/javascript"></script>
+    </div>
+</body>
+
+</html>
